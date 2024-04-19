@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+.loginPage{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 40px;
+  }
+  
+  
+  .left{
+    flex:2;
+    background-Color: #0f3175;
+    color: white;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-inline: 20px;
+  }
+  
+  .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:4;
+    background-Color: white;
+  }
+  
+  .loginField{
+  
+    height: 60vh ;  
+    width: 40vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+
+  }
