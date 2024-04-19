@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Button, Checkbox, FormControlLabel, FormGroup, TextField, Typography } from "@mui/material";
 import React from "react";
 import "./LoginPage.css";
 
@@ -17,7 +17,7 @@ const LoginPage = () => {
             id="outlined-basic"
             label="Username"
             variant="outlined"
-            sx={{ width: "100%", paddingTop: "10px", marginTop:"50px"}}
+            sx={{ width: "100%", paddingTop: "10px", marginTop: "50px" }}
           />
 
           <TextField
@@ -25,8 +25,29 @@ const LoginPage = () => {
             id="outlined-basic"
             label="Password"
             variant="outlined"
-            sx={{ width: "100%", paddingTop: "10px", marginTop:"20px" }}
+            sx={{ width: "100%", paddingTop: "10px", marginTop: "20px" }}
           />
+
+          <Button
+            variant="comntained"
+            sx={{
+              bgcolor: "#151F42",
+              color: "#fff",
+              marginTop: "10px",
+              width: "100%",
+            }}
+          >
+            Login
+          </Button>
+          <div className="rememberMe">
+            <FormGroup>
+              <FormControlLabel
+                control={<Checkbox  /> }
+                label="Remember Me" sx={{color:"#151f42"}}
+              />
+            </FormGroup>
+ <span>Forgot Password?</span>
+          </div>
         </div>
       </div>
     </div>
