@@ -22,7 +22,10 @@ body {
 }
 
 .left {
-  width: 80vw;
+  background-image: url(../Images/Panel\ left\ img.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 90vh;
   flex: 1;
   background-color: #151f42;

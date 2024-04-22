@@ -22,6 +22,10 @@
   }
   
   .left {
+    background-image: url(../Images/Panel\ left\ img.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 80vw;
     height: 90vh;
     flex: 1;
