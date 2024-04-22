@@ -15,7 +15,7 @@ import {
   TextField,
 } from "@mui/material";
 import React from "react";
-import "./LoginErrorPage.css";
+import "../Authentication/LoginErrorPage.css";
 import { CancelOutlined, Visibility, VisibilityOff } from "@mui/icons-material";
 
 const EmailErrorPage = () => {

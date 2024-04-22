@@ -22,7 +22,7 @@ body {
 }
 
 .left {
-  background-image: url(../Images/Panel\ left\ img.png);
+  background-image: url(/src/Images/left-panel-img.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;

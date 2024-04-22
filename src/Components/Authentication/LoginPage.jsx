@@ -6,7 +6,7 @@ import {
   TextField,
 } from "@mui/material";
 import React from "react";
-import "./LoginPage.css";
+import "../Authentication/LoginPage.css";
 
 const LoginPage = () => {
   return (
