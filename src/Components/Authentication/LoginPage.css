@@ -28,7 +28,7 @@ body {
   background-size: cover;
   height: 90vh;
   flex: 1;
-  background-color: #151f42;
+  /* background-color: #151f42; */
   color: white;
   text-transform: capitalize;
   font-family: "syne", sans-serif;
