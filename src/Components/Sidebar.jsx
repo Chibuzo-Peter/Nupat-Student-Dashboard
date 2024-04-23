@@ -13,8 +13,8 @@ const Sidebar = () => {
               <img src={logo} alt="logo"  />
       <Typography sx={{width:"90.61px", height:"40px",paddingTop:"15px", fontFamily:"inter, sans-serif",  fontWeight:"600", fontSize:"10px", color:"#131F45"}}>Building Innovations, Empowering Change.</Typography>
       </Box>
-      <Typography paddingTop="2rem" sx={{color:"#000000", paddingBottom:"2rem", fontFamily:"inter, sans-serif", fontWeight:"500"}} >MAIN MENU</Typography>
-         <List sx={{bgcolor:"#FFFFFF", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"320.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
+      <Typography paddingTop="2rem" sx={{color:"#000000", paddingBottom:"3rem", fontFamily:"inter, sans-serif", fontWeight:"500"}} >MAIN MENU</Typography>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"320.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Dashboard">
               <ListItemIcon >
@@ -24,7 +24,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"320.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Profile">
               <ListItemIcon>
@@ -34,7 +34,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"320.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="facilitator">
               <ListItemIcon>
@@ -44,7 +44,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"320.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="courses">
               <ListItemIcon>
@@ -54,7 +54,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"320.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="resources">
               <ListItemIcon>
@@ -64,7 +64,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"320.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Chat">
               <ListItemIcon>
@@ -75,7 +75,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"320.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Calendar">
               <ListItemIcon>
