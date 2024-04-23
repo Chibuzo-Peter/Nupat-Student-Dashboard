@@ -17,13 +17,30 @@ import {
 import React, { useState } from "react";
 import "../Authentication/LoginPage.css";
 import { CancelOutlined } from "@mui/icons-material";
+import axios from 'axios';
+
 
 const LoginPage = () => {
   const [OpenLoginPage, setOpenLoginPage] = useState(false);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState();
+  const [Username, setUsername] = useState("");
+  const [Password, setPassword] = useState("");
 
-  const changeState = (state) => {
+
+  const Login = async () =>{
+    const url = ""
+    const data = {
+      Username: Username,
+      Password: Password
+    }
+    try{
+      const response = await axios.post(url, data)
+    }
+    catch(err){
+      console.log(err)
+    }
+  }
+
+  const changeState = () => {
     setOpenLoginPage(!OpenLoginPage);
   };
 
@@ -59,6 +76,7 @@ const LoginPage = () => {
                 marginTop: "10px",
                 width: "100%",
               }}
+              
             >
               Login
             </Button>
