@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Checkbox,
   FormControl,
@@ -20,6 +21,9 @@ import { CancelOutlined, Visibility, VisibilityOff } from "@mui/icons-material";
 
 const PasswordErrorPage = () => {
   return (
+   <Box className="body">
+
+
     <div className="loginPage">
       <div className="left">
         <h1>building innovation; empowering change</h1>
@@ -69,7 +73,7 @@ const PasswordErrorPage = () => {
               marginTop: "10px",
               "& fieldset": { borderColor: "tomato !important" },
             }}
-          />
+            />
 
           <Button
             variant="outlined"
@@ -101,6 +105,7 @@ const PasswordErrorPage = () => {
         </div>
       </div>
     </div>
+   </Box>
   );
 };
 

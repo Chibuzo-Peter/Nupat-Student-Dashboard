@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Checkbox,
   FormControlLabel,
@@ -10,6 +11,9 @@ import "../Authentication/LoginPage.css";
 
 const LoginPage = () => {
   return (
+  <Box className="body">
+
+
     <div className="loginPage">
       <div className="left">
         <h1>building innovation; empowering change</h1>
@@ -58,6 +62,7 @@ const LoginPage = () => {
         </div>
       </div>
     </div>
+  </Box>
   );
 };
 

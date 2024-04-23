@@ -1,14 +1,14 @@
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  body {
+  .body {
     background-color: whitesmoke;
     display: flex;
-    align-items: center;
-    justify-content: center;
+     align-items: center; 
+     justify-content: center; 
   }
   
   .loginPage {
@@ -66,5 +66,5 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-  }
+ }
   
