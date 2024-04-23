@@ -3,24 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: whitesmoke;
 
-}
-.body {
-  display: flex;
-    align-items: center; 
-    justify-content: center;  
-}
+
 
 .loginPage {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
-  width: 90vw;
-  border-radius: 20px;
   margin-top: 10vh;
+}
+
+.Login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 80vh;
+  width: 80vw;
 }
 
 .left {
@@ -30,7 +29,7 @@ body{
   background-size: cover;
   height: 90vh;
   flex: 1;
-   background-color: #151f42; 
+  /* background-color: #151f42; */
   color: white;
   text-transform: capitalize;
   font-family: "syne", sans-serif;
@@ -41,7 +40,7 @@ body{
   padding-inline: 20px;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
-}
+} 
 
 .right {
   height: 90vh;
@@ -67,4 +66,4 @@ body{
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
-} 
+}
