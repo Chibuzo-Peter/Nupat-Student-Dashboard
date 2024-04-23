@@ -8,6 +8,11 @@ body{
   background-color: #b4b4b4;
 }
 
+.Logo{
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
 
 .loginPage {
   display: flex;
