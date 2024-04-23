@@ -121,7 +121,7 @@ const LoginPage = () => {
                     </ListItemIcon>
                     <ListItemText
                       primary="Sorry, we couldn't find an account with that email, can we help you recover it?"
-                      sx={{ fontsize: "3px" }}
+                      sx={{ fontsize: "3px" }} c       
                     />
                   </ListItemButton>
                 </ListItem>
