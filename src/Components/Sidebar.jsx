@@ -1,12 +1,19 @@
 import React from 'react'
 import {  AccountCircle, AccountCircleOutlined, Description, DescriptionOutlined, GridView, LibraryAdd,  RecordVoiceOverOutlined,  ReduceCapacityOutlined, Today, WhatsApp,  } from '@mui/icons-material'
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
+import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import StyledBadge from '@mui/material/Badge';
-import logo1 from '../Images/logo1.png'
+import logo from "../Images/logo.png"
+
+
 const Sidebar = () => {
   return (
     <Box  flex={1} p={2} sx={{display:{xs:"none", sm:"block"}}}>
-      <img src="../images/image.png" alt="logo" />
+      <Box display='flex' sx={{ width:"137.44px", height:"59.53px", gap:"4px"}} >
+
+              <img src={logo} alt="logo"  />
+      <Typography sx={{width:"75.61px", height:"36px", fontFamily:"inter, sans-serif",  fontWeight:"600", fontSize:"10px", color:"#131F45"}}>Building Innovations, Empowering Change.</Typography>
+      </Box>
+      <Typography paddingTop="5rem" sx={{color:"#000000", fontWeight:"500"}} >MAIN MENU</Typography>
          <List>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Dashboard">
@@ -59,7 +66,7 @@ const Sidebar = () => {
          </List> 
          <List>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="Chats">
+            <ListItemButton component="a" href="Chat">
               <ListItemIcon>
                <WhatsApp />
               </ListItemIcon>
