@@ -18,7 +18,7 @@ const Sidebar = () => {
 
       <Typography variant='p1' component="h3" paddingTop="1.5rem" sx={{color:"#000000", paddingBottom:"3rem", fontFamily:"inter, sans-serif", fontWeight:"500"}} >MAIN MENU</Typography>
 
-         <List sx={{bgcolor:"#FFFFFF",   marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"275.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px"}}>
+         <List sx={{bgcolor:"#FFFFFF",   marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', display:"flex", flexDirection:"column",   width:"100%",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px"}}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Dashboard">
               <ListItemIcon >
@@ -28,7 +28,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"275.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', display:"flex", flexDirection:"column",   width:"100%",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Profile">
               <ListItemIcon>
@@ -38,7 +38,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"275.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', display:"flex", flexDirection:"column",   width:"100%",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="facilitator">
               <ListItemIcon>
@@ -48,7 +48,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"275.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', display:"flex", flexDirection:"column",   width:"100%",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="courses">
               <ListItemIcon>
@@ -58,7 +58,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"275.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', display:"flex", flexDirection:"column",   width:"100%",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="resources">
               <ListItemIcon>
@@ -68,7 +68,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"275.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', display:"flex", flexDirection:"column",   width:"100%",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Chat">
               <ListItemIcon>
@@ -79,7 +79,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"275.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
+         <List sx={{bgcolor:"#FFFFFF", marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', display:"flex", flexDirection:"column",   width:"100%",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Calendar">
               <ListItemIcon>
@@ -92,7 +92,7 @@ const Sidebar = () => {
          </List> 
 
 
-         <List sx={{bgcolor:"#FFFFFF", marginTop:"8rem",   '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"275.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
+         <List sx={{bgcolor:"#FFFFFF", marginTop:"8rem",   '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', display:"flex", flexDirection:"column",   width:"100%",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Settings">
               <ListItemIcon>
@@ -103,7 +103,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
          </List> 
-         <List sx={{bgcolor:"#FFFFFF",color:"#ED4A4A",  marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', width:"275.41px",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
+         <List sx={{bgcolor:"#FFFFFF",color:"#ED4A4A",  marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" }, display:"flex", flexDirection:"column",   width:"100%", borderRadius:'10px', paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px', height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="signout">
               <ListItemIcon>
