@@ -9,8 +9,8 @@ import Resources from "./Pages/Resources";
 import Chats from "./Pages/Chats";
 import Calendar from "./Pages/Calendar";
 import Dashboard from "./Pages/Dashboard";
-
-
+import Settings from "./Pages/Settings/Settings";
+import SignoutPage from "./Components/Authentication/SignoutPage";
 
 function App() {
   return (
@@ -24,6 +24,8 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/chat" element={<Chats />} />
         <Route path="/calendar" element={<Calendar />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/signout" element={<SignoutPage />} />
 
 
 
