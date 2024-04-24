@@ -33,7 +33,7 @@ const DashboardRightbar = () => {
                         
 
         </Box>
-        <Box sx={{display:"flex",  alignItem:"center", marginBlockStart:"30px", padding:"10px", bgcolor:"#FFFFFF",   }}>
+        <Box sx={{display:"flex",  alignItem:"center", marginBlockStart:"30px", padding:"10px", bgcolor:"#FFFFFF",  width:"100%" }}>
             
             <img src={miroLogo} alt='figmalogo' height="40.53px"  />
             
