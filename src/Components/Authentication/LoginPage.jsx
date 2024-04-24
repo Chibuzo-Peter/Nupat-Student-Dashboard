@@ -54,7 +54,7 @@ const LoginPage = () => {
           </div>
           <div className="right">
             <div className="loginField">
-            <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF"}}}>
+            <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
                   Login
                 </Typography>
               <TextField
@@ -84,7 +84,7 @@ const LoginPage = () => {
                 }}
                 onClick={handleLogin}
               >
-                <Typography component="a" href="/dashboard">
+                <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
                   Login
                 </Typography>
               </Button>
@@ -113,7 +113,7 @@ const LoginPage = () => {
             </div>
             <div className="right">
               <div className="loginField">
-              <Typography component="a" href="/dashboard">
+              <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
                   Login
                 </Typography>
 
@@ -176,7 +176,7 @@ const LoginPage = () => {
                   }}
                   onClick={handleLogin}
                 >
-                  <Typography component="a" href="/dashboard">
+                  <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
                   Login
                 </Typography>
                 </Button>
@@ -210,7 +210,9 @@ const LoginPage = () => {
             </div>
             <div className="right">
               <div className="loginField">
-                <h1>Login</h1>
+              <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
+                  Login
+                </Typography>
 
                 <List
                   sx={{
@@ -271,7 +273,9 @@ const LoginPage = () => {
                   }}
                   onClick={handleLogin}
                 >
+                 <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
                   Login
+                </Typography>
                 </Button>
 
                 <div className="rememberMe">
