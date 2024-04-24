@@ -54,7 +54,7 @@ const LoginPage = () => {
           </div>
           <div className="right">
             <div className="loginField">
-            <Typography component="a" href="/dashboard">
+            <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF"}}}>
                   Login
                 </Typography>
               <TextField
