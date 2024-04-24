@@ -14,6 +14,7 @@ import {
   ListItemIcon,
   ListItemText,
   OutlinedInput,
+  Typography,
 } from "@mui/material";
 import React, { useState } from "react";
 import "../Authentication/LoginPage.css";
@@ -53,7 +54,9 @@ const LoginPage = () => {
           </div>
           <div className="right">
             <div className="loginField">
-              <h1>Login</h1>
+            <Typography component="a" href="/dashboard">
+                  Login
+                </Typography>
               <TextField
                 className="textField"
                 id="outlined-basic"
@@ -81,7 +84,9 @@ const LoginPage = () => {
                 }}
                 onClick={handleLogin}
               >
-                Login
+                <Typography component="a" href="/dashboard">
+                  Login
+                </Typography>
               </Button>
               <div className="rememberMe">
                 <FormGroup>
@@ -108,7 +113,9 @@ const LoginPage = () => {
             </div>
             <div className="right">
               <div className="loginField">
-                <h1>Login</h1>
+              <Typography component="a" href="/dashboard">
+                  Login
+                </Typography>
 
                 <List
                   sx={{
@@ -155,7 +162,7 @@ const LoginPage = () => {
                   onChange={(e) => setPassword(e.target.value)}
                 />
 
-                <Button
+                  <Button
                   variant="outlined"
                   sx={{
                     bgcolor: "#151F42",
@@ -169,7 +176,9 @@ const LoginPage = () => {
                   }}
                   onClick={handleLogin}
                 >
+                  <Typography component="a" href="/dashboard">
                   Login
+                </Typography>
                 </Button>
 
                 <div className="rememberMe">
