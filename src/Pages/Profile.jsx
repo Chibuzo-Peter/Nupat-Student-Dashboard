@@ -9,10 +9,10 @@ const Profile = () => {
   return (
     <Box>
         <Navbar />
-        <Stack direction="row" spacing={2} justifyContent="space-between" >
+        <Stack direction="row" spacing={1} justifyContent="space-between" bgcolor="#fff">
 
             <Sidebar />
-            <Feeds word="Profile" />
+            <Feeds word="Profile" bgcolor="#FFF"/>
             <Rightbar />
 
 
