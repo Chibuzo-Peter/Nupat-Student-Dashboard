@@ -38,7 +38,7 @@ const DashboardRightbar = () => {
             <img src={miroLogo} alt='figmalogo' height="40.53px"  />
             
             < Container sx={{flexDirection:"row", lineHeight:"0.5px"}}>
-            <Typography variant='h6' component="p" sx={{fontFamily:"inter, sans-serif", fontSize:"14px", fontWeight:"700",}}>Data Resources </Typography>
+            <Typography variant='h6' component="p" sx={{fontFamily:"inter, sans-serif", fontSize:"15px", fontWeight:"700",}}>Data Resources </Typography>
             <Typography variant='span' sx={{fontSize:"14px", color:"#B7B6B6", fontFamily:"inter, sans-serif", fontWeight:"600", lineHeight:"16px"}}>Miro</Typography> 
             </Container>
             <Container>
