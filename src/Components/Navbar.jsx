@@ -60,9 +60,9 @@ const Navbar = () => {
           <InputBase placeholder="Search..." sx={{ color: "black" }} />
         </Search>
         <Icons>
-          <Avatar src={ProfilePic} onClick={(e) => setOpen(true)} />
+          <Avatar src={ProfilePic} onClick={(e)  => setOpen(true)} />
           <Badge badgeContent={""} color="error">
-            <Notifications sx={{ color: "#eee" }} />
+            <Notifications sx={{ color: "#b3b3b3" }} />
           </Badge>
         </Icons>
         <UserBox onClick={(e) => setOpen(true)}>
