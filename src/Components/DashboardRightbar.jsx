@@ -24,7 +24,7 @@ const DashboardRightbar = () => {
             <Typography variant='h5' component="p" sx={{fontFamily:"inter, sans-serif", fontWeight:"700",}}>Active Lessons </Typography>
             <Typography variant='span' sx={{fontSize:"12px", fontFamily:"inter, sans-serif", fontWeight:"600", lineHeight:"16px"}}>Average 75% completed lessons.</Typography> 
             </Container> 
-            <Typography sx={{width:"120px", height:"32px",  bgcolor:"#0254A0", borderRadius:"5px", padding:"8px", fontSize:"13px", fontFamily:"inter, sans-serif", color:"#FFFFFF", fontWeight:"600"}}>All Lessons </Typography>
+            <Typography component="button" sx={{width:"120px", cursor:"pointer", height:"32px",  bgcolor:"#0254A0", borderRadius:"5px", padding:"8px", fontSize:"13px", fontFamily:"inter, sans-serif", color:"#FFFFFF", fontWeight:"600"}}>All Lessons </Typography>
             
         </Box>
         <Box sx={{display:"flex",  alignItem:"center", marginBlockStart:"30px", padding:"10px", bgcolor:"#FFFFFF",  width:"100%" }}>
@@ -120,7 +120,7 @@ const DashboardRightbar = () => {
        </Container>
 
        <Container sx={{border:"2px solid #B7B6B6 ",paddingInline:"50px",  marginBlock:"15px", borderRadius:"20px", alignContent:"center"}}>
-       <CalendarGfg style={{padding:"50px"}} />
+       <CalendarGfg />
        </Container>
 
 
