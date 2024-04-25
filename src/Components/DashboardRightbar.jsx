@@ -10,7 +10,7 @@ import psLogo from "../Images/photoshopLogo.png"
 import blueLine from "../Images/blueLine.png"
 import purpleLine from "../Images/purpleLine.png"
 import xdLogo from "../Images/indesignLogo.png"
-import CommonlyUsedComponents from '../Pages/CommonlyUsedComponents'
+import CalendarGfg from './Calendar'
 
 
 const DashboardRightbar = () => {
@@ -119,8 +119,8 @@ const DashboardRightbar = () => {
         </Box>
        </Container>
 
-       <Container>
-       <CommonlyUsedComponents/>
+       <Container sx={{border:"2px solid #B7B6B6 ",paddingInline:"50px",  marginBlock:"15px", borderRadius:"20px", alignContent:"center"}}>
+       <CalendarGfg style={{padding:"50px"}} />
        </Container>
 
 
