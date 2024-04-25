@@ -7,7 +7,7 @@ import logo from "../Images/logo.png"
 
 const Sidebar = () => {
   return (
-    <Box  flex={1} p={2}  sx={{display:{xs:"none", sm:"block"}, height:"100hv", borderRight:" 1px solid grey"}}>
+    <Box  flex={1} p={2}  sx={{display:{xs:"none", sm:"block"}, height:"100hv", m:"0", borderRight:" 1px solid #B7B6B6"}}>
      <Box  >
 
       <Box display='flex' sx={{ width:"137.44px", margin:"0", height:"100px", gap:"4px"}} >

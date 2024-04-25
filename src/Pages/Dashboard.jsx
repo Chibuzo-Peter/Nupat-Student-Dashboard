@@ -2,8 +2,8 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Sidebar'
 import Feeds from '../Components/Feeds'
-import Rightbar from '../Components/Rightbar'
 import { Box, Stack } from '@mui/material'
+import DashboardRightbar from '../Components/DashboardRightbar'
 
 
 const Dashboard = () => {
@@ -14,7 +14,7 @@ const Dashboard = () => {
 
             <Sidebar />
             <Feeds word="Dashboard" />
-            <Rightbar />
+            <DashboardRightbar />
 
 
         </Stack>
