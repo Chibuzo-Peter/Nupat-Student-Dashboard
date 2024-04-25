@@ -119,7 +119,7 @@ const DashboardRightbar = () => {
         </Box>
        </Container>
 
-       <Container sx={{border:"2px solid #B7B6B6 ", display:"flex", flexWrap:"wrap",  paddingInline:"50px", width:"40%", marginBlock:"15px", borderRadius:"20px", alignContent:"center"}}>
+       <Container sx={{border:"2px solid #B7B6B6 ", display:"flex", flexWrap:"wrap",  paddingInline:"50px", width:"100%", marginBlock:"15px", borderRadius:"20px", alignContent:"center"}}>
        <CalendarGfg />
        </Container>
 
