@@ -29,21 +29,21 @@ const Profile = () => {
         <Sidebar />
         <Box
           height={400}
-          width={600}
+          width="100%"
           my={4}
           display="flex"
           alignItems="center"
           gap={2}
           p={2}
         >
-          <Card sx={{ maxWidth: 550 }}>
+          <Card sx={{ maxWidth: 700 }}>
             <CardMedia
               component="img"
               alt="Profile banner"
               height="200"
               image={Banner}
             />
-            <Edit sx={{marginLeft:"36vw",position:"absolute", top:"15vh", color:"#fff" }}/>
+            <Edit sx={{marginLeft:"40vw",position:"absolute", top:"15vh", color:"#fff" }}/>
             
             <Box mt={-5} p={2} position="absolute" top="40vh">
               <img src={ProfilePic} alt="" width={100} marginTop={5} />
@@ -66,7 +66,7 @@ const Profile = () => {
         </Box>
         <Box
           height={200}
-          width={300}
+          width={500}
           my={4}
           display="flex"
           alignItems="center"
