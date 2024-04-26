@@ -25,53 +25,57 @@ const Dashboard = () => {
             How to
             </Typography>
           </Card>
-          <Card sx={{bgcolor:"#FFFFFF", marginBottom:"", width:"50%", borderRadius:"15px", padding:"25px",}}>
-          <Typography variant="h6" component="p" sx={{color:"#131F45", width:"37%"}} fontWeight={100}>
+          <Card sx={{bgcolor:"#FFFFFF", marginTop:"3rem", width:"50%", height:"40%", borderRadius:"15px", padding:"25px",}}>
+          <Typography variant="h6" component="p" sx={{color:"#131F45", }} fontWeight={100}>
           Today’s Course
           </Typography>
-          <Typography sx={{color:"#B5B5B5"}}>0 lessons, 0 hours 0 minutes</Typography>
+          <Typography sx={{color:"#B5B5B5", marginBottom:"1rem"}}>0 lessons, 0 hours 0 minutes</Typography>
             
               
-          <Box marginBlock="20px" sx={{  display:"flex", gap:"40px", flexWrap:"nowrap"}}>
-            <img src={Round} alt="sign" style={{border:"1px solid red"}}/>
-            <Typography  component="p" sx={{ height:"10%", color:"#000000", fontWeight:"700", border:"1px solid red"}}>Product Design</Typography>
-          </Box>
-            <Container >
-            <Container sx={{display:"grid",  paddingTop:"30px",   gridTemplateColumns:"1fr 1fr"}}>
-              <Box sx={{display:"flex",  cursor:"pointer", margin:"20px"}}>
+          {/* <Box marginBlock="20px" sx={{  display:"flex",  gap:"40px", border:"1px solid red", flexWrap:"nowrap"}}> */}
+            <img src={Round} alt="sign"   height="38%" />
+            <Typography  component="p" sx={{left:"11rem", bottom:"08rem", height:"40px", width:"30%", position:"relative", color:"#000000", fontWeight:"700", }}>Product Design</Typography>
+          {/* </Box> */}
+            
+            
+              <Box sx={{display:"flex", left:"08.5rem", bottom:"09rem", position:"relative", width:"40%", paddingRight:"50px",  flexDirection: "row", justifyContent: "center", alignItems: "center",  cursor:"pointer", margin:"20px"}}>
                 <img src={Arrow}
-                alt="arrow"  />
-                <Typography sx={{ marginLeft:"4px", color:"#B5B5B5"}}>0 Topics</Typography>
+                alt="arrow"   />
+                <Typography sx={{ marginLeft:"4px",  color:"#B5B5B5"}}>0 Topics</Typography>
                 
               </Box >
-              <Box sx={{display:"flex",   cursor:"pointer", margin:"20px"}}>
+              <Box sx={{display:"flex", left:"17rem", bottom:"11.8rem", position:"relative", width:"40%", paddingRight:"50px",  flexDirection: "row", justifyContent: "center", alignItems: "center",  cursor:"pointer", margin:"20px"}}>
                 <img src={Arrow}
                 alt="arrow"  />
-                <Typography sx={{ marginLeft:"4px", color:"#B5B5B5"}}>0 Topics</Typography>
+                <Typography sx={{ marginLeft:"4px",  color:"#B5B5B5"}}>0 Min</Typography>
                 
               </Box >
-                </Container>
-                
-                <Container sx={{display:"flex"}}>
-              <Box sx={{display:"flex", flexWrap:"wrap", cursor:"pointer", margin:"20px"}}>
+              <Box sx={{display:"flex", left:"18.2rem", bottom:"11.9rem", position:"relative", width:"40%", paddingRight:"50px",  flexDirection: "row", justifyContent: "center", alignItems: "center",  cursor:"pointer", margin:"20px"}}>
                 <img src={Arrow}
-                alt="arrow"  />
-                <Typography sx={{ color:"#B5B5B5"}}>0 Topics</Typography>
+                alt="arrow"   />
+                <Typography sx={{ marginLeft:"4px",  color:"#B5B5B5"}}>0 Students</Typography>
                 
               </Box >
-              <Box sx={{display:"flex", flexWrap:"wrap", cursor:"pointer", margin:"20px"}}>
+              <Box sx={{display:"flex", left:"09.2rem", bottom:"14.7rem", position:"relative", width:"40%", paddingRight:"50px",  flexDirection: "row", justifyContent: "center", alignItems: "center",  cursor:"pointer", margin:"20px"}}>
                 <img src={Arrow}
-                alt="arrow"  />
-                <Typography sx={{ color:"#B5B5B5"}}>0 Topics</Typography>
+                alt="arrow"   />
+                <Typography sx={{ marginLeft:"4px",  color:"#B5B5B5"}}>0 Speakers</Typography>
                 
               </Box >
+
+                            
+              
+
+                
+           
              
 
-
-
-                </Container>
                 
-            </Container>
+
+
+               
+                
+           
 
 
 
