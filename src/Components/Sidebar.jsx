@@ -92,7 +92,7 @@ const Sidebar = () => {
          </List> 
 
 
-         <List sx={{bgcolor:"#FFFFFF", marginTop:"8rem",   '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', display:"flex", flexDirection:"column",   width:"100%",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
+         <List sx={{bgcolor:"#FFFFFF", marginTop:"100%",   '&:hover':{bgcolor:"#CBD5F4" },  borderRadius:'10px', display:"flex", flexDirection:"column",   width:"100%",  paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px',height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="Settings">
               <ListItemIcon>
