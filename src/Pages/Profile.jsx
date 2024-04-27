@@ -2,10 +2,7 @@ import React from "react";
 import Sidebar from "../Components/Sidebar";
 import {
   Box,
-  Button,
   Card,
-  CardActionArea,
-  CardActions,
   CardContent,
   CardMedia,
   Stack,
@@ -18,50 +15,122 @@ import { Edit } from "@mui/icons-material";
 
 const Profile = () => {
   return (
-    <Box>
+    <Box sx={{ width: "100%", height: "100%", top: "7591px", left: "21260px" }}>
       <Navbar />
-      <Stack
-        direction="row"
-        spacing={1}
-        justifyContent="space-between"
-        bgcolor="#fff"
-      >
-        <Sidebar />
+      <Stack direction="row" spacing={1} justifyContent="space-between">
+        <Sidebar style={{ display: { xs: "none", sm: "none", md: "block" } }} />
         <Box
-          height={400}
+          height="100%"
           width="100%"
           my={4}
           display="flex"
           alignItems="center"
+          flexDirection="column"
           gap={2}
           p={2}
         >
-          <Card sx={{ maxWidth: 700 }}>
-            <CardMedia
-              component="img"
-              alt="Profile banner"
-              height="200"
-              image={Banner}
-            />
-            <Edit sx={{marginLeft:"40vw",position:"absolute", top:"15vh", color:"#fff" }}/>
-            
-            <Box mt={-5} p={2} position="absolute" top="40vh">
-              <img src={ProfilePic} alt="" width={100} marginTop={5} />
-              <Edit />
-            </Box>
+          <Card
+            style={{
+              width: "100%",
+              height: "60vh",
 
-            <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
-                James Obogu <br />
-                <small>Full Stack Development</small>
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                sapiente, laboriosam perspiciatis ab commodi laborum quaerat
-                repudiandae tempora voluptates eaque!
-              </Typography>
-            </CardContent>
-            
+              top: "71px",
+              left: "271px",
+              borderRadius: "15px",
+              background: "#F4F4F4",
+              display: {
+                // xs: "block",
+                // sm: "block",
+                // md: "block",
+                width: { xs: "70vw", sm: "70vw", md: "70vw",lg:"50vw" },
+              },
+            }}
+          >
+            <div>
+              <img
+                src={Banner}
+                alt=""
+                style={{
+                  height: "35vh",
+                  width: "60vw",
+                  backgroundPosition: "center",
+                }}
+              />
+              <span>
+                <Edit
+                  sx={{
+                    marginLeft: "45vw",
+                    position: "relative",
+                    top: "-25vh",
+                    color: "#fff",
+                  }}
+                />
+              </span>
+            </div>
+            <img
+              src={ProfilePic}
+              alt=""
+              style={{
+                position: "absolute",
+                width: "122px",
+                height: "122px",
+                top: "40vh",
+                left: "22vw",
+              }}
+            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                position: "relative",
+                top: "10vh",
+                marginLeft: "20px",
+                marginBottom: "20px",
+              }}
+            >
+              <h4>James Obogu</h4>
+              <h5>Full Stack Developer</h5>
+              <h6>
+                Lagos State, Nigeria{" "}
+                <span>
+                  <a href="/Profile" style={{ textDecoration: "none" }}>
+                    Contact info
+                  </a>
+                </span>
+              </h6>
+            </div>
+          </Card>
+
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <h3>About</h3>
+            <span>
+              <Edit
+                sx={{
+                  marginLeft: "35vw",
+                  // position: "absolute",
+                  top: "15vh",
+                  color: "#000",
+                }}
+              />
+            </span>
+          </div>
+
+          <Card
+            style={{
+              width: "50vw",
+              height: "60vh",
+              top: "71px",
+              left: "271px",
+              borderRadius: "15px",
+              background: "#F4F4F4",
+              display: { xs: "block", sm: "block", md: "block" },
+            }}
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              sapiente, laboriosam perspiciatis ab commodi laborum quaerat
+              repudiandae tempora voluptates eaque!
+            </p>
           </Card>
         </Box>
         <Box
@@ -72,6 +141,7 @@ const Profile = () => {
           alignItems="center"
           gap={4}
           p={2}
+          sx={{ display: { xs: "none", sm: "none", md: "block" } }}
         >
           This is the side of the Profile screen
         </Box>
