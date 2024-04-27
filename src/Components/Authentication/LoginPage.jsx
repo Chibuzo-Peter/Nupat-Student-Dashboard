@@ -54,9 +54,16 @@ const LoginPage = () => {
           </div>
           <div className="right">
             <div className="loginField">
-            <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
-                  Login
-                </Typography>
+              <Typography
+                component="a"
+                href="/dashboard"
+                sx={{
+                textDecoration: "none",
+                "&:hover": { color: "#FFF", bgcolor: "aqua" }}}
+                
+              >
+                Login
+              </Typography>
               <TextField
                 className="textField"
                 id="outlined-basic"
@@ -79,12 +86,24 @@ const LoginPage = () => {
                 sx={{
                   bgcolor: "#151F42",
                   color: "#fff",
-                  marginTop: "10px",
-                  width: "100%",
+                  width: "50%",
+                  // marginInline:"30%",
+                    margin:"20px 20%",
+                    textDecoration: "none",
+                    "&:hover": { color: "#FFF", bgcolor: "aqua" },
+                  
                 }}
                 onClick={handleLogin}
               >
-                <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
+                <Typography
+                  component="a"
+                  href="/dashboard"
+                  sx={{
+                    
+                    textDecoration: "none",
+                    "&:hover": { color: "#FFFFFF", bgcolor: "#131F45" },
+                  }}
+                >
                   Login
                 </Typography>
               </Button>
@@ -113,7 +132,14 @@ const LoginPage = () => {
             </div>
             <div className="right">
               <div className="loginField">
-              <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
+                <Typography
+                  component="a"
+                  href="/dashboard"
+                  sx={{
+                    textDecoration: "none",
+                    "&:hover": { color: "#FFFFFF", bgcolor: "#131F45" },
+                  }}
+                >
                   Login
                 </Typography>
 
@@ -130,7 +156,8 @@ const LoginPage = () => {
                       <ListItemIcon>
                         <CancelOutlined />
                       </ListItemIcon>
-                      <ListItemText variant="p"
+                      <ListItemText
+                        variant="p"
                         primary="Sorry, we couldn't find an account with that email, can we help you recover it?"
                         sx={{ fontsize: "3px" }}
                       />
@@ -148,7 +175,7 @@ const LoginPage = () => {
                     paddingTop: "10px",
                     marginTop: "10px",
                     "& fieldset": { borderColor: "tomato !important" },
-                  }} 
+                  }}
                   onChange={(e) => setUsername(e.target.value)}
                 />
 
@@ -162,7 +189,7 @@ const LoginPage = () => {
                   onChange={(e) => setPassword(e.target.value)}
                 />
 
-                  <Button
+                <Button
                   variant="outlined"
                   sx={{
                     bgcolor: "#151F42",
@@ -176,9 +203,16 @@ const LoginPage = () => {
                   }}
                   onClick={handleLogin}
                 >
-                  <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
-                  Login
-                </Typography>
+                  <Typography
+                    component="a"
+                    href="/dashboard"
+                    sx={{
+                      textDecoration: "none",
+                      "&:hover": { color: "#FFFFFF", bgcolor: "#131F45" },
+                    }}
+                  >
+                    Login
+                  </Typography>
                 </Button>
 
                 <div className="rememberMe">
@@ -210,7 +244,14 @@ const LoginPage = () => {
             </div>
             <div className="right">
               <div className="loginField">
-              <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
+                <Typography
+                  component="a"
+                  href="/dashboard"
+                  sx={{
+                    textDecoration: "none",
+                    "&:hover": { color: "#FFFFFF", bgcolor: "#131F45" },
+                  }}
+                >
                   Login
                 </Typography>
 
@@ -273,9 +314,16 @@ const LoginPage = () => {
                   }}
                   onClick={handleLogin}
                 >
-                 <Typography component="a" href="/dashboard" sx={{textDecoration:"none", '&:hover':{color:"#FFFFFF", bgcolor:"#131F45"}}}>
-                  Login
-                </Typography>
+                  <Typography
+                    component="a"
+                    href="/dashboard"
+                    sx={{
+                      textDecoration: "none",
+                      "&:hover": { color: "#FFFFFF", bgcolor: "#131F45" },
+                    }}
+                  >
+                    Login
+                  </Typography>
                 </Button>
 
                 <div className="rememberMe">
