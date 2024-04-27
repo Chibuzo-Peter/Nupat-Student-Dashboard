@@ -15,130 +15,112 @@ import { Edit } from "@mui/icons-material";
 
 const Profile = () => {
   return (
-    <Box >
+    <Box>
       <Navbar />
-      <Stack direction="row" spacing={1} justifyContent="space-between">
+      <Stack direction={{ xs: "column", md: "row" }} spacing={1}>
         <Sidebar style={{ display: { xs: "none", sm: "none", md: "block" } }} />
         <Box
-          height="100%"
-          width="50vw"
           my={4}
           display="flex"
           alignItems="center"
           flexDirection="column"
           gap={2}
           p={2}
+          flexGrow={1}
         >
           <Card
             style={{
-              width: "50vw",
-              height: "60vh",
-              top: "71px",
-              left: "271px",
+              width: "90vw",
+              maxWidth: "600px",
               borderRadius: "15px",
               background: "#F4F4F4",
-              // width: { xs: "70vw", sm: "70vw", md: "70vw", lg: "50vw" },
             }}
           >
-            <div>
             <img
-  src={Banner}
-  alt=""
-  style={{
-    height: "35vh",
-    width: "100%",
-    maxWidth: "100%", 
-    backgroundPosition: "center",
-  
-  }}
-/>
-
-              <span>
-                <Edit
-                  sx={{
-                    marginLeft: "45vw",
-                    position: "relative",
-                    top: "-25vh",
-                    color: "#fff",
-                  }}
-                />
-              </span>
-            </div>
-            <img
-              src={ProfilePic}
+              src={Banner}
               alt=""
               style={{
-                position: "absolute",
-                width: "122px",
-                height: "122px",
-                top: "40vh",
-                left: "16vw",
+                height: "35vh",
+                width: "100%",
+                objectFit: "cover",
+                borderTopLeftRadius: "15px",
+                borderTopRightRadius: "15px",
               }}
             />
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                position: "relative",
-                top: "10vh",
-                marginLeft: "20px",
-                marginBottom: "20px",
-              }}
-            >
-              <h4>James Obogu</h4>
-              <h5>Full Stack Developer</h5>
-              <h6>
-                Lagos State, Nigeria{" "}
-                <span>
-                  <a href="/Profile" style={{ textDecoration: "none" }}>
-                    Contact info
-                  </a>
-                </span>
-              </h6>
-            </div>
-          </Card>
-
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <h3>About</h3>
             <span>
               <Edit
                 sx={{
-                  marginLeft: "35vw",
-                  // position: "absolute",
-                  top: "15vh",
-                  color: "#000",
+                  position: "absolute",
+                  top: "8px",
+                  right: "8px",
+                  color: "#fff",
                 }}
               />
             </span>
-          </div>
-
-          <Card
-            style={{
-              width: "50vw",
-              height: "60vh",
-              top: "71px",
-              left: "271px",
-              borderRadius: "15px",
-              background: "#F4F4F4",
-              display: { xs: "block", sm: "block", md: "block" },
-            }}
-          >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              sapiente, laboriosam perspiciatis ab commodi laborum quaerat
-              repudiandae tempora voluptates eaque!
-            </p>
+            <CardContent>
+              <img
+                src={ProfilePic}
+                alt=""
+                style={{
+                  width: "122px",
+                  height: "122px",
+                  borderRadius: "50%",
+                  position: "relative",
+                  top: "-61px",
+                  left: "16px",
+                }}
+              />
+              <div style={{ marginLeft: "20px" }}>
+                <Typography variant="h4" component="h4" gutterBottom>
+                  James Obogu
+                </Typography>
+                <Typography variant="h5" gutterBottom>
+                  Full Stack Developer
+                </Typography>
+                <Typography variant="h6" gutterBottom>
+                  Lagos State, Nigeria{" "}
+                  <span>
+                    <a href="/Profile" style={{ textDecoration: "none" }}>
+                      Contact info
+                    </a>
+                  </span>
+                </Typography>
+              </div>
+            </CardContent>
           </Card>
+
+          <Box my={2}>
+            <Typography variant="h4" component="h3" gutterBottom>
+              About
+              <span>
+                <Edit sx={{ marginLeft: "8px", color: "#000" }} />
+              </span>
+            </Typography>
+            <Card
+              style={{
+                width: "90vw",
+                maxWidth: "600px",
+                borderRadius: "15px",
+                background: "#F4F4F4",
+              }}
+            >
+              <CardContent>
+                <Typography variant="body1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  sapiente, laboriosam perspiciatis ab commodi laborum quaerat
+                  repudiandae tempora voluptates eaque!
+                </Typography>
+              </CardContent>
+            </Card>
+          </Box>
         </Box>
         <Box
           height={200}
           width={500}
           my={4}
-          display="flex"
+          display={{ xs: "none", sm: "none", md: "block" }}
           alignItems="center"
-          gap={4}
-          p={2}
-          sx={{ display: { xs: "none", sm: "none", md: "block" } }}
+          justifyContent="center"
         >
           This is the side of the Profile screen
         </Box>
