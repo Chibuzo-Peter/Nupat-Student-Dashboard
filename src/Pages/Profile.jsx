@@ -15,13 +15,13 @@ import { Edit } from "@mui/icons-material";
 
 const Profile = () => {
   return (
-    <Box sx={{ width: "100%", height: "100%", top: "7591px", left: "21260px" }}>
+    <Box >
       <Navbar />
       <Stack direction="row" spacing={1} justifyContent="space-between">
         <Sidebar style={{ display: { xs: "none", sm: "none", md: "block" } }} />
         <Box
           height="100%"
-          width="100%"
+          width="50vw"
           my={4}
           display="flex"
           alignItems="center"
@@ -31,31 +31,28 @@ const Profile = () => {
         >
           <Card
             style={{
-              width: "100%",
+              width: "50vw",
               height: "60vh",
-
               top: "71px",
               left: "271px",
               borderRadius: "15px",
               background: "#F4F4F4",
-              display: {
-                // xs: "block",
-                // sm: "block",
-                // md: "block",
-                width: { xs: "70vw", sm: "70vw", md: "70vw",lg:"50vw" },
-              },
+              // width: { xs: "70vw", sm: "70vw", md: "70vw", lg: "50vw" },
             }}
           >
             <div>
-              <img
-                src={Banner}
-                alt=""
-                style={{
-                  height: "35vh",
-                  width: "60vw",
-                  backgroundPosition: "center",
-                }}
-              />
+            <img
+  src={Banner}
+  alt=""
+  style={{
+    height: "35vh",
+    width: "100%",
+    maxWidth: "100%", 
+    backgroundPosition: "center",
+  
+  }}
+/>
+
               <span>
                 <Edit
                   sx={{
@@ -75,7 +72,7 @@ const Profile = () => {
                 width: "122px",
                 height: "122px",
                 top: "40vh",
-                left: "22vw",
+                left: "16vw",
               }}
             />
             <div
