@@ -105,7 +105,7 @@ const Sidebar = () => {
          </List> 
          <List sx={{bgcolor:"#FFFFFF",color:"#ED4A4A",  marginBlock:"15px", '&:hover':{bgcolor:"#CBD5F4" }, display:"flex", flexDirection:"column",   width:"100%", borderRadius:'10px', paddingBottom:"3rem", Padding:'8.01px, 12.02px, 8.01px, 12.02px', height:"20px",  gap:"45px" }}>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="signout">
+            <ListItemButton component="a" href="/">
               <ListItemIcon>
                <Logout />
               </ListItemIcon>
