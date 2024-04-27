@@ -18,7 +18,7 @@ const Profile = () => {
     <Box>
       <Navbar />
       <Stack direction={{ xs: "column", md: "row" }} spacing={1}>
-        <Sidebar style={{ display: { xs: "none", sm: "none", md: "block" } }} />
+        <Sidebar style={{ display: { xs: "none", sm: "none", md: "none" } }} />
         <Box
           my={4}
           display="flex"
@@ -30,8 +30,8 @@ const Profile = () => {
         >
           <Card
             style={{
-              width: "90vw",
-              maxWidth: "600px",
+              width: "100%",
+              maxWidth: "800px",
               borderRadius: "15px",
               background: "#F4F4F4",
             }}
@@ -67,7 +67,7 @@ const Profile = () => {
                   borderRadius: "50%",
                   position: "relative",
                   top: "-61px",
-                  left: "16px",
+                  left: "14px",
                 }}
               />
               <div style={{ marginLeft: "20px" }}>
