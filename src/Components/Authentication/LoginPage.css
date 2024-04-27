@@ -6,16 +6,13 @@
 
 .body {
   background-color: #e7e7e7;
-}
-
-.body {
   margin: 5vw;
   border-radius: 40px;
 }
 
 .Logo {
   position: absolute;
-  top: 8%;
+  top: 10%;
   left: 8%;
 }
 
@@ -46,8 +43,8 @@
   color: white;
   text-transform: capitalize;
   font-family: "syne", sans-serif;
-  font-size: 2vw; /* Adjust font size relative to viewport width */
-  padding: 2vw; /* Adjust padding relative to viewport width */
+  font-size: 2vw; 
+  padding: 2vw; 
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
   display: flex;
@@ -84,6 +81,7 @@
     padding: 3vw;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    background-size: contain; /* Change background size to contain */
   }
 
   .loginField {
@@ -109,5 +107,4 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-top: 1vw; */
 }
