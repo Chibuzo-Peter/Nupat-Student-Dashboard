@@ -6,14 +6,14 @@
 
 .body {
   background-color: #e7e7e7;
-  margin: 5vw;
+  margin-inline: 10vw;
   border-radius: 40px;
 }
 
 .Logo {
   position: absolute;
-  top: 10%;
-  left: 8%;
+  top: 8%;
+  left: 10%;
 }
 
 .loginPage {
@@ -21,8 +21,9 @@
   align-items: center;
   justify-content: center;
   margin-top: 10vh;
-  border-radius: 40px;
   width: 80vw;
+  height: 100%;
+  border-radius: 40px;
 }
 
 .Login {
@@ -31,6 +32,7 @@
   justify-content: center;
   flex-direction: row;
   height: 80vh;
+  width: 80vw;
 }
 
 .left {
@@ -39,12 +41,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  width: 40vw;
+  width: 466px;
   color: white;
   text-transform: capitalize;
   font-family: "syne", sans-serif;
-  font-size: 2vw; 
-  padding: 2vw; 
+  font-size: 25px;
+  padding-inline: 18px;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
   display: flex;
@@ -53,39 +55,49 @@
 }
 
 @media screen and (max-width: 768px) {
-  .body {
-    margin: 0;
-    border-radius: 0;
-  }
 
+  .body {
+    background-color: 0;
+    margin-inline: 0;
+    border-radius: 0;
+  }  
   .loginPage {
     margin-top: 0;
   }
 
   .Login {
-    flex-direction: column;
+    display: block;
     height: 50vh;
     width: 100%;
   }
 
   .Logo {
-    top: 1vw;
-    left: 1vw;
-    width: 10vw;
+    top: -15px;
+    left: -10px;
+    width: 80px;
+  }
+
+  .left h1 {
+    margin-top: 60px;
+    padding: 10px;
   }
 
   .left {
     height: 45vh;
     width: 100%;
-    font-size: 3vw;
-    padding: 3vw;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    background-size: contain; /* Change background size to contain */
+    margin-inline: 0;
+    font-size: 17px;
+    background-position: center;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: 0;
   }
 
+ 
   .loginField {
-    padding: 5vw;
+  padding: 20px;
+  background-color: 0;
+
   }
 }
 
@@ -93,18 +105,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40vw;
+  background-color: 0;
+/* z-index: 2; */
 }
 
 .loginField {
   height: 60vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 2vw;
-  margin: 3vw;
+  padding: 20px;
+  margin: 20px;
 }
 
 .rememberMe {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 10px;
 }
