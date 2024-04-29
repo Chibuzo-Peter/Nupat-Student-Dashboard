@@ -11,7 +11,13 @@ import {
 import Navbar from "../Components/Navbar";
 import Banner from "../Images/profile banner.png";
 import ProfilePic from "../Images/Profile photo.png";
-import { Edit } from "@mui/icons-material";
+import {
+  AccountBalance,
+  AutoStories,
+  Edit,
+  Email,
+  LocationOn,
+} from "@mui/icons-material";
 
 const Profile = () => {
   return (
@@ -53,7 +59,7 @@ const Profile = () => {
                   position: "absolute",
                   top: "8px",
                   right: "8px",
-                  color: "#fff",
+                  color: "fff",
                 }}
               />
             </span>
@@ -70,7 +76,11 @@ const Profile = () => {
                   left: "14px",
                 }}
               />
+              <span>
+                <Edit sx={{ marginLeft: "30vw",position:"relative", top:"-17vh", color: "#000", zIndex:"10" }} />
+              </span>
               <div style={{ marginLeft: "20px" }}>
+                
                 <Typography variant="h4" component="h4" gutterBottom>
                   James Obogu
                 </Typography>
@@ -93,7 +103,7 @@ const Profile = () => {
             <Typography variant="h4" component="h3" gutterBottom>
               About
               <span>
-                <Edit sx={{ marginLeft: "8px", color: "#000" }} />
+                <Edit sx={{ marginLeft: "33vw", color: "#000" }} />
               </span>
             </Typography>
             <Card
@@ -104,16 +114,83 @@ const Profile = () => {
                 background: "#F4F4F4",
               }}
             >
-              <CardContent>
-                <Typography variant="body1">
+              <div style={{ padding: "20px" }}>
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
                   sapiente, laboriosam perspiciatis ab commodi laborum quaerat
                   repudiandae tempora voluptates eaque!
-                </Typography>
-              </CardContent>
+                </p>
+                <div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBlock: "10px",
+                      marginInline: "10px",
+                    }}
+                  >
+                    <AccountBalance />
+                    <span style={{ marginInline: "10px" }}>
+                      Full Stack Developer
+                    </span>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBlock: "10px",
+                      marginInline: "10px",
+                    }}
+                  >
+                    <Email />
+                    <span style={{ marginInline: "10px" }}>
+                      oboguj@gmail.com
+                    </span>
+                  </div>
+
+
+
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBlock: "10px",
+                      marginInline: "10px",
+                    }}
+                  >
+                    <AutoStories />
+                    <span style={{ marginInline: "10px" }}>
+                      Studying at NUPAT Technologies
+                    </span>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBlock: "10px",
+                      marginInline: "10px",
+                    }}
+                  >
+                    <LocationOn />
+                    <span style={{ marginInline: "10px" }}>Lagos, Nigeria</span>
+                  </div>
+                </div>
+              </div>
             </Card>
           </Box>
+
+
+
+          <div>
+            <Typography variant="h4" component="p" gutterBottom>
+              Social Media Accounts
+              <span>
+                <Edit sx={{ marginLeft: "12vw", color: "#000" }} />
+              </span>
+            </Typography>
+          </div>
         </Box>
+
         <Box
           height={200}
           width={500}
