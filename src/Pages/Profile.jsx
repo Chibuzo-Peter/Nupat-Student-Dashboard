@@ -239,12 +239,14 @@ const Profile = () => {
           display={{ xs: "none", sm: "none", md: "block" }}
           alignItems="center"
           justifyContent="center"
+          sx={{marginTop:"20vh"
+        }}
         >
           <Typography
             variant="h6"
             component="p"
             gutterBottom
-            sx={{ margin: "10px" }}
+            sx={{ marginTop:"10vh" }}
           >
             <strong>Skills</strong>
             <span>
@@ -318,7 +320,7 @@ const Profile = () => {
             </section>
           </div>
 
-          <div style={{ marginTop: "15vh" }}></div>
+          <div style={{ marginTop: "15vh", padding:"10px"}}></div>
 
           <Typography
             variant="h6"
