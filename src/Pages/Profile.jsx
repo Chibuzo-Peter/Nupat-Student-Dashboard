@@ -183,11 +183,11 @@ const Profile = () => {
             </Card>
           </Box>
 
-          <div>
+          <div style={{marginLeft:"-50px"}}>
             <Typography variant="h6" component="p" gutterBottom>
-              Social Media Accounts
+              <strong>Social Media Accounts</strong>
               <span>
-                <Edit sx={{ marginLeft: "12vw", color: "#000" }} />
+                <Edit sx={{ marginLeft: "20vw", color: "#000" }} />
               </span>
             </Typography>
 
@@ -233,11 +233,11 @@ const Profile = () => {
           justifyContent="center"
         >
           <Typography variant="h6" component="p" gutterBottom sx={{margin:"10px"}}>
-            Skills{" "}
+           <strong>Skills</strong> 
             <span>
-              <Edit sx={{ marginLeft: "12vw", color: "#000" }} />
+              <Edit sx={{ marginLeft: "25vw", color: "#000" }} />
             </span>
-          </Typography>{" "}
+          </Typography>
         </Box>
       </Stack>
     </Box>
