@@ -1,13 +1,6 @@
 import React from "react";
 import Sidebar from "../Components/Sidebar";
-import {
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Card, CardContent, Stack, Typography } from "@mui/material";
 import Navbar from "../Components/Navbar";
 import Banner from "../Images/profile banner.png";
 import ProfilePic from "../Images/Profile photo.png";
@@ -21,12 +14,17 @@ import {
   LocationOn,
   X,
 } from "@mui/icons-material";
+import Logo from "../Images/logo.png";
 
 const Profile = () => {
   return (
     <Box>
       <Navbar />
-      <Stack direction={{ xs: "column", md: "row" }} spacing={1}>
+      <Stack
+        direction={{ xs: "column", md: "row" }}
+        spacing={1}
+        sx={{ background: "#eee" }}
+      >
         <Sidebar style={{ display: { xs: "none", sm: "none", md: "none" } }} />
         <Box
           my={4}
@@ -49,7 +47,7 @@ const Profile = () => {
               src={Banner}
               alt=""
               style={{
-                height: "35vh",
+                height: "25vh",
                 width: "100%",
                 objectFit: "cover",
                 borderTopLeftRadius: "15px",
@@ -71,8 +69,8 @@ const Profile = () => {
                 src={ProfilePic}
                 alt=""
                 style={{
-                  width: "122px",
-                  height: "122px",
+                  width: "80px",
+                  height: "80px",
                   borderRadius: "50%",
                   position: "relative",
                   top: "-61px",
@@ -90,7 +88,7 @@ const Profile = () => {
                   }}
                 />
               </span>
-              <div style={{ marginLeft: "20px" }}>
+              <div style={{ marginLeft: "10px", marginTop:"-50px" }}>
                 <Typography variant="h5" component="h4" gutterBottom>
                   James Obogu
                 </Typography>
@@ -183,7 +181,7 @@ const Profile = () => {
             </Card>
           </Box>
 
-          <div style={{marginLeft:"-50px"}}>
+          <div style={{ marginLeft: "-50px" }}>
             <Typography variant="h6" component="p" gutterBottom>
               <strong>Social Media Accounts</strong>
               <span>
@@ -199,8 +197,10 @@ const Profile = () => {
                   margin: "10px",
                 }}
               >
-                <LinkedIn /> 
-                <span style={{margin:"10px"}}>https://linkedIn.com/james-obogu</span>
+                <LinkedIn />
+                <span style={{ margin: "10px" }}>
+                  https://linkedIn.com/james-obogu
+                </span>
               </div>
               <div
                 style={{
@@ -209,7 +209,10 @@ const Profile = () => {
                   margin: "10px",
                 }}
               >
-                <X /> <span style={{margin:"10px"}}>https://twitter.com/james-obogu</span>
+                <X />{" "}
+                <span style={{ margin: "10px" }}>
+                  https://twitter.com/james-obogu
+                </span>
               </div>
               <div
                 style={{
@@ -218,26 +221,180 @@ const Profile = () => {
                   margin: "10px",
                 }}
               >
-                <Instagram /> <span style={{margin:"10px"}} >https://instagram.com/james-obogu</span>
+                <Instagram />{" "}
+                <span style={{ margin: "10px" }}>
+                  https://instagram.com/james-obogu
+                </span>
               </div>
             </section>
           </div>
         </Box>
 
-        <Box 
+        {/* Rightbar section */}
+
+        <Box
           height={200}
           width={500}
-          my={5}
+          margin="20px"
           display={{ xs: "none", sm: "none", md: "block" }}
           alignItems="center"
           justifyContent="center"
         >
-          <Typography variant="h6" component="p" gutterBottom sx={{margin:"10px"}}>
-           <strong>Skills</strong> 
+          <Typography
+            variant="h6"
+            component="p"
+            gutterBottom
+            sx={{ margin: "10px" }}
+          >
+            <strong>Skills</strong>
             <span>
               <Edit sx={{ marginLeft: "25vw", color: "#000" }} />
             </span>
           </Typography>
+          <div style={{ marginTop: "5vh" }}>
+            <h5>Figma</h5>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                fontSize: "16px",
+                borderBottom: "1px solid gray",
+              }}
+            >
+              <img
+                src={Logo}
+                alt=""
+                width={25}
+                style={{ background: "darkBlue", margin: "5px" }}
+              />
+              <span>NUPAT Technologies</span>
+            </div>
+          </div>
+
+          <div style={{ marginTop: "5vh" }}>
+            <h5>Miro</h5>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                fontSize: "16px",
+              }}
+            >
+              <img
+                src={Logo}
+                alt=""
+                width={25}
+                style={{ background: "darkBlue", margin: "5px" }}
+              />
+              <span>NUPAT Technologies</span>
+            </div>
+            <section style={{ display: "block" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  fontSize: "16px",
+                  borderBottom: "1px solid gray",
+                }}
+              >
+                <img
+                  src={Logo}
+                  alt=""
+                  width={25}
+                  style={{ background: "darkBlue", margin: "5px" }}
+                />
+                <span>APTECH Technologies</span>
+              </div>
+              <a
+                href="/courses"
+                style={{
+                  textDecoration: "none",
+                  marginLeft: "50%",
+                  marginTop: "20%",
+                }}
+              >
+                <small style={{ textAlign: "center" }}>Show More Skills</small>
+              </a>
+            </section>
+          </div>
+
+          <div style={{ marginTop: "15vh" }}></div>
+
+          <Typography
+            variant="h6"
+            component="p"
+            gutterBottom
+            sx={{ margin: "10px" }}
+          >
+            <strong>Interst</strong>
+            <span>
+              <Edit sx={{ marginLeft: "25vw", color: "#000" }} />
+            </span>
+          </Typography>
+
+          <div style={{ display: "flex", gap: "20px" }}>
+            <div>
+              <h5>Figma</h5>
+              <p>World leaders in Research-Based on User Interface.</p>
+              <button
+                style={{
+                  backgroundColor: "violet",
+                  padding: "3px",
+                  border: "none",
+                  borderRadius: "5px",
+                }}
+              >
+                Design App
+              </button>
+            </div>
+            <div>
+              <h5>Figma</h5>
+              <p>World leaders in Research-Based on User Interface.</p>
+              <button
+                style={{
+                  backgroundColor: "violet",
+                  padding: "3px",
+                  border: "none",
+                  borderRadius: "5px",
+                }}
+              >
+                Design App
+              </button>
+            </div>
+          </div>
+
+          <div style={{ display: "flex", gap: "20px", marginTop: "10%" }}>
+            <div>
+              <h5>InDesign</h5>
+              <h6>Adobe XD</h6>
+              <p>World leaders in Research-Based on User Interface.</p>
+              <button
+                style={{
+                  backgroundColor: "violet",
+                  padding: "3px",
+                  border: "none",
+                  borderRadius: "5px",
+                }}
+              >
+                Design App
+              </button>
+            </div>
+            <div>
+              <h5>InDesign</h5>
+              <h6>Adobe XD</h6>
+              <p>World leaders in Research-Based on User Interface.</p>
+              <button
+                style={{
+                  backgroundColor: "violet",
+                  padding: "3px",
+                  border: "none",
+                  borderRadius: "5px",
+                }}
+              >
+                Design App
+              </button>
+            </div>
+          </div>
         </Box>
       </Stack>
     </Box>
