@@ -16,7 +16,10 @@ import {
   AutoStories,
   Edit,
   Email,
+  Instagram,
+  LinkedIn,
   LocationOn,
+  X,
 } from "@mui/icons-material";
 
 const Profile = () => {
@@ -57,9 +60,9 @@ const Profile = () => {
               <Edit
                 sx={{
                   position: "absolute",
-                  top: "8px",
-                  right: "8px",
-                  color: "fff",
+                  top: "15vh",
+                  left: "57vw",
+                  color: "#fff",
                 }}
               />
             </span>
@@ -77,14 +80,21 @@ const Profile = () => {
                 }}
               />
               <span>
-                <Edit sx={{ marginLeft: "30vw",position:"relative", top:"-17vh", color: "#000", zIndex:"10" }} />
+                <Edit
+                  sx={{
+                    marginLeft: "30vw",
+                    position: "relative",
+                    top: "-17vh",
+                    color: "#000",
+                    zIndex: "10",
+                  }}
+                />
               </span>
               <div style={{ marginLeft: "20px" }}>
-                
-                <Typography variant="h4" component="h4" gutterBottom>
+                <Typography variant="h5" component="h4" gutterBottom>
                   James Obogu
                 </Typography>
-                <Typography variant="h5" gutterBottom>
+                <Typography variant="h6" gutterBottom>
                   Full Stack Developer
                 </Typography>
                 <Typography variant="h6" gutterBottom>
@@ -125,8 +135,7 @@ const Profile = () => {
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      marginBlock: "10px",
-                      marginInline: "10px",
+                      margin: "10px",
                     }}
                   >
                     <AccountBalance />
@@ -138,8 +147,7 @@ const Profile = () => {
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      marginBlock: "10px",
-                      marginInline: "10px",
+                      margin: "10px",
                     }}
                   >
                     <Email />
@@ -148,14 +156,11 @@ const Profile = () => {
                     </span>
                   </div>
 
-
-
                   <div
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      marginBlock: "10px",
-                      marginInline: "10px",
+                      margin: "10px",
                     }}
                   >
                     <AutoStories />
@@ -167,8 +172,7 @@ const Profile = () => {
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      marginBlock: "10px",
-                      marginInline: "10px",
+                      margin: "10px",
                     }}
                   >
                     <LocationOn />
@@ -179,27 +183,61 @@ const Profile = () => {
             </Card>
           </Box>
 
-
-
           <div>
-            <Typography variant="h4" component="p" gutterBottom>
+            <Typography variant="h6" component="p" gutterBottom>
               Social Media Accounts
               <span>
                 <Edit sx={{ marginLeft: "12vw", color: "#000" }} />
               </span>
             </Typography>
+
+            <section>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  margin: "10px",
+                }}
+              >
+                <LinkedIn /> 
+                <span style={{margin:"10px"}}>https://linkedIn.com/james-obogu</span>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  margin: "10px",
+                }}
+              >
+                <X /> <span style={{margin:"10px"}}>https://twitter.com/james-obogu</span>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  margin: "10px",
+                }}
+              >
+                <Instagram /> <span style={{margin:"10px"}} >https://instagram.com/james-obogu</span>
+              </div>
+            </section>
           </div>
         </Box>
 
-        <Box
+        <Box 
           height={200}
           width={500}
-          my={4}
+          my={5}
           display={{ xs: "none", sm: "none", md: "block" }}
           alignItems="center"
           justifyContent="center"
         >
-          This is the side of the Profile screen
+          <Typography variant="h6" component="p" gutterBottom sx={{margin:"10px"}}>
+            Skills{" "}
+            <span>
+              <Edit sx={{ marginLeft: "12vw", color: "#000" }} />
+            </span>
+          </Typography>{" "}
         </Box>
       </Stack>
     </Box>
