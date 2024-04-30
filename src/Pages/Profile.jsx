@@ -61,6 +61,7 @@ const Profile = () => {
                   top: "15vh",
                   left: "57vw",
                   color: "#fff",
+                  cursor: "pointer"
                 }}
               />
             </span>
@@ -85,6 +86,7 @@ const Profile = () => {
                     top: "-17vh",
                     color: "#000",
                     zIndex: "10",
+                    cursor: "pointer"
                   }}
                 />
               </span>
@@ -111,7 +113,8 @@ const Profile = () => {
             <Typography variant="h4" component="h3" gutterBottom>
               About
               <span>
-                <Edit sx={{ marginLeft: "33vw", color: "#000" }} />
+                    
+                <Edit sx={{ marginLeft: "33vw", color: "#000", cursor: "pointer"  }} />
               </span>
             </Typography>
             <Card
@@ -185,7 +188,7 @@ const Profile = () => {
             <Typography variant="h6" component="p" gutterBottom>
               <strong>Social Media Accounts</strong>
               <span>
-                <Edit sx={{ marginLeft: "20vw", color: "#000" }} />
+                <Edit sx={{ marginLeft: "20vw", color: "#000", cursor: "pointer" }} />
               </span>
             </Typography>
 
@@ -250,7 +253,7 @@ const Profile = () => {
           >
             <strong>Skills</strong>
             <span>
-              <Edit sx={{ marginLeft: "25vw", color: "#000" }} />
+              <Edit sx={{ marginLeft: "25vw", color: "#000", cursor: "pointer" }} />
             </span>
           </Typography>
           <div style={{ marginTop: "5vh" }}>
@@ -330,7 +333,7 @@ const Profile = () => {
           >
             <strong>Interst</strong>
             <span>
-              <Edit sx={{ marginLeft: "25vw", color: "#000" }} />
+              <Edit sx={{ marginLeft: "25vw", color: "#000", cursor: "pointer" }} />
             </span>
           </Typography>
 
