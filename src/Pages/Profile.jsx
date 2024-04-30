@@ -38,7 +38,7 @@ const Profile = () => {
           <Card
             style={{
               width: "100%",
-              maxWidth: "800px",
+              maxWidth: "100%",
               borderRadius: "15px",
               background: "#F4F4F4",
             }}
@@ -89,20 +89,20 @@ const Profile = () => {
                 />
               </span>
               <div style={{ marginLeft: "10px", marginTop:"-50px" }}>
-                <Typography variant="h5" component="h4" gutterBottom>
+                <h4>
                   James Obogu
-                </Typography>
-                <Typography variant="h6" gutterBottom>
+                </h4>
+                <h5>
                   Full Stack Developer
-                </Typography>
-                <Typography variant="h6" gutterBottom>
+                </h5>
+                <small>
                   Lagos State, Nigeria{" "}
                   <span>
                     <a href="/Profile" style={{ textDecoration: "none" }}>
                       Contact info
                     </a>
                   </span>
-                </Typography>
+                </small>
               </div>
             </CardContent>
           </Card>
@@ -337,7 +337,7 @@ const Profile = () => {
           <div style={{ display: "flex", gap: "20px" }}>
             <div>
               <h5>Figma</h5>
-              <p>World leaders in Research-Based on User Interface.</p>
+              <small>World leaders in Research-Based on User Interface.</small><br />
               <button
                 style={{
                   backgroundColor: "violet",
@@ -351,7 +351,7 @@ const Profile = () => {
             </div>
             <div>
               <h5>Figma</h5>
-              <p>World leaders in Research-Based on User Interface.</p>
+              <small>World leaders in Research-Based on User Interface.</small><br />
               <button
                 style={{
                   backgroundColor: "violet",
@@ -369,7 +369,7 @@ const Profile = () => {
             <div>
               <h5>InDesign</h5>
               <h6>Adobe XD</h6>
-              <p>World leaders in Research-Based on User Interface.</p>
+              <small marginTop="5px">World leaders in Research-Based on User Interface.</small><br />
               <button
                 style={{
                   backgroundColor: "violet",
@@ -384,7 +384,7 @@ const Profile = () => {
             <div>
               <h5>InDesign</h5>
               <h6>Adobe XD</h6>
-              <p>World leaders in Research-Based on User Interface.</p>
+              <small>World leaders in Research-Based on User Interface.</small><br />
               <button
                 style={{
                   backgroundColor: "violet",
