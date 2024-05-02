@@ -1,19 +1,37 @@
 import { Box, Container, Typography } from '@mui/material'
 import React from 'react'
-import  figmaLogo from "../Images/figmaLogo.png"
-import  pinkLine from "../Images/pinkLine.png"
-import miroLogo from "../Images/dataResrcLogo.png"
-import yellowLine from "../Images/yellowLine.png"
-import aiLogo from "../Images/aiLogo.png"
-import redLine from "../Images/aiLine.png"
-import psLogo from "../Images/photoshopLogo.png"
-import blueLine from "../Images/blueLine.png"
-import purpleLine from "../Images/purpleLine.png"
-import xdLogo from "../Images/indesignLogo.png"
-import CalendarGfg from './Calendar'
+import  figmaLogo from "../../Images/figmaLogo.png"
+import miroLogo from "../../Images/dataResrcLogo.png"
+import yellowLine from "../../Images/yellowLine.png"
+import aiLogo from "../../Images/aiLogo.png"
+import redLine from "../../Images/aiLine.png"
+import psLogo from "../../Images/photoshopLogo.png"
+import blueLine from "../../Images/blueLine.png"
+import purpleLine from "../../Images/purpleLine.png"
+import xdLogo from "../../Images/indesignLogo.png"
+import CalendarGfg from '../Calendar'
+import LinearProgresss, { LinearProgressWithLabel } from './RightDashboardPercentage'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
 const DashboardRightbar = () => {
+    const theme = createTheme({
+        palette: {
+          povicky: {
+            light: '#ffee33',
+            main: '#ffea00',
+            dark: '#b2a300',
+            contrastText: '#fff',
+          },
+          secondary: {
+            light: '#ff7961',
+            main: '#f44336',
+            dark: '#ba000d',
+            contrastText: '#000',
+          },
+        },
+      });
+
   return ( 
     <Box flex={2} p={2} sx={{display:{xs:"none", sm:"block"}}}>
 
@@ -36,9 +54,8 @@ const DashboardRightbar = () => {
             <Typography variant='span' sx={{fontSize:"14px", color:"#B7B6B6", fontFamily:"inter, sans-serif", fontWeight:"600", lineHeight:"16px"}}>Figma</Typography> 
             </Container>
             <Container>
-            <img src={pinkLine} alt="test Line" width="150.81px" height="6px"/>
+                 <LinearProgresss  color="povicky" />
             </Container>    
-            <Typography sx={{fontFamily:"inter, sans-serif", fontWeight:"600", fontSize:"18px"}}>0%</Typography>
                         
 
         </Box>
@@ -51,10 +68,8 @@ const DashboardRightbar = () => {
             <Typography variant='span' sx={{fontSize:"14px", color:"#B7B6B6", fontFamily:"inter, sans-serif", fontWeight:"600", lineHeight:"16px"}}>Miro</Typography> 
             </Container>
             <Container>
-            <img src={yellowLine} alt="test Line" width="150.81px" height="6px"/>
+                 <LinearProgresss  color="error" />
             </Container>    
-            <Typography sx={{fontFamily:"inter, sans-serif", fontWeight:"600", fontSize:"18px"}}>0%</Typography>
-                        
 
         </Box>
         <Box sx={{display:"flex",  marginRight:"80px", alignItem:"left",  marginBlockStart:"30px", padding:"10px", bgcolor:"#FFFFFF",  width:"100%" }}>
@@ -66,10 +81,8 @@ const DashboardRightbar = () => {
             <Typography variant='span' sx={{fontSize:"14px", color:"#B7B6B6", fontFamily:"inter, sans-serif", fontWeight:"600", lineHeight:"16px"}}>illustrator</Typography> 
             </Container>
             <Container>
-            <img src={redLine} alt="test Line" width="150.81px" height="6px"/>
-            </Container>    
-            <Typography sx={{fontFamily:"inter, sans-serif", fontWeight:"600", fontSize:"18px"}}>0%</Typography>
-                        
+                 <LinearProgresss  color="warning" />
+            </Container>          
 
         </Box>
         <Box sx={{display:"flex",  marginRight:"80px", alignItem:"left",  marginBlockStart:"30px", padding:"10px", bgcolor:"#FFFFFF",  width:"100%" }}>
@@ -81,10 +94,8 @@ const DashboardRightbar = () => {
             <Typography variant='span' sx={{fontSize:"14px", color:"#B7B6B6", fontFamily:"inter, sans-serif", fontWeight:"600", lineHeight:"16px"}}>Drawing & Editing</Typography> 
             </Container>
             <Container>
-            <img src={blueLine} alt="test Line" width="150.81px" height="6px"/>
-            </Container>    
-            <Typography sx={{fontFamily:"inter, sans-serif", fontWeight:"600", fontSize:"18px"}}>0%</Typography>
-                        
+                 <LinearProgresss  color="info" />
+            </Container>          
 
         </Box>
         <Box sx={{display:"flex",  marginRight:"80px", alignItem:"left",  marginBlockStart:"30px", padding:"10px", bgcolor:"#FFFFFF",  width:"100%" }}>
@@ -96,10 +107,8 @@ const DashboardRightbar = () => {
             <Typography variant='span' sx={{fontSize:"14px", color:"#B7B6B6", fontFamily:"inter, sans-serif", fontWeight:"600", lineHeight:"16px"}}>illustrator</Typography> 
             </Container>
             <Container>
-            <img src={redLine} alt="test Line" width="150.81px" height="6px"/>
-            </Container>    
-            <Typography sx={{fontFamily:"inter, sans-serif", fontWeight:"600", fontSize:"18px"}}>0%</Typography>
-                        
+                 <LinearProgresss  color="warning" />
+            </Container>           
 
         </Box>
         <Box sx={{display:"flex",  marginRight:"80px", alignItem:"left", marginBottom:"8px",  marginBlockStart:"30px", padding:"10px", bgcolor:"#FFFFFF",  width:"100%" }}>
@@ -111,10 +120,8 @@ const DashboardRightbar = () => {
             <Typography variant='span' sx={{fontSize:"14px", color:"#B7B6B6", fontFamily:"inter, sans-serif", fontWeight:"600", lineHeight:"16px"}}>Adobe Xd</Typography> 
             </Container>
             <Container>
-            <img src={purpleLine} alt="test Line" width="150.81px" height="6px"/>
-            </Container>    
-            <Typography sx={{fontFamily:"inter, sans-serif", fontWeight:"600", fontSize:"18px"}}>0%</Typography>
-                        
+                 <LinearProgresss  color="secondary" />
+            </Container>         
 
         </Box>
        </Container>

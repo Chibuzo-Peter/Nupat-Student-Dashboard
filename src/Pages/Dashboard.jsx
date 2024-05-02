@@ -2,21 +2,39 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
 import { Box, Card, Container, Stack, Typography } from "@mui/material";
-import DashboardRightbar from "../Components/DashboardRightbar";
+import DashboardRightbar from "../Components/RightDashboard/DashboardRightbar";
 import Round from "../Images/round.png"
 import Round2 from "../Images/round2.png"
 import Arrow from "../Images/arrowdot.png"
-import Col from 'react-bootstrap/Col';
+
+import styled from "styled-components";
 const Dashboard = () => {
+
+const Button = styled.button`
+border : none;
+background-color : #599FD5;
+color : #FFFFFF;
+font-size : 25px;
+padding : 25px;
+border-radius : 10px;
+cursor :pointer;  
+width: 30%; 
+margin: 0 15px 0 0;
+box-shadow: 0 6px 20px 2px #599FD5;
+margin-bottom : 100px;
+top:3rem;
+
+`;
+
+
   return (
     <Box>
       <Navbar />
       <Stack direction="row" spacing={2} justifyContent="space-between">
         <Sidebar />
         <Box height="100vh" flex={4} p={2} >
-          <Col sm={{span:12}} md={{span:8}}>
           <Card sx={{bgcolor:"#131F45", width:"100%", borderRadius:"15px", padding:"25px",}}>
-            <Typography variant="h6" component="p" sx={{color:"#FFFFFF", width:"37%"}} fontWeight={100}>
+            <Typography variant="h6" component="p" sx={{color:"#FFFFFF", width:"26.5%"}} fontWeight={100}>
               You have got <b style={{color:"#03DAF7"}}>1000+ bonus</b> points Feel Free to use them in your
               lessons
             </Typography>
@@ -27,9 +45,9 @@ const Dashboard = () => {
             How to
             </Typography>
           </Card>
-          </Col>
-          <Box sx={{display:"flex", width:"100%",  padding:"10px",}}>
-          <Card sx={{bgcolor:"#FFFFFF",marginRight:"20px",  marginTop:"3rem", width:"50%", height:"35%", borderRadius:"15px", padding:"25px",}}>
+         
+          <Box sx={{display:"flex",  sm:{flexDirection:"column"},  xs:{flexDirection:"column"}, width:"100%",  padding:"10px",}}>
+          <Card sx={{bgcolor:"#FFFFFF",marginRight:"20px", alignItems:"center", marginTop:"3rem", width:"50%", height:"35%", borderRadius:"15px", padding:"25px",}}>
           <Typography variant="h6" component="p" sx={{color:"#131F45", }} fontWeight={100}>
           Today’s Course
           </Typography>
@@ -66,13 +84,15 @@ const Dashboard = () => {
                 <Typography sx={{ marginLeft:"4px",  color:"#B5B5B5"}}>0 Speakers</Typography>
                 
               </Box >
-          
-              <Typography component="button" sx={{marginRight:"10px", position:"absolute",border:"none",top:"35rem", width:"6%",fontSize:"1.3rem", height:"5%", bgcolor:"#D8E0F8", cursor:"pointer", color:"#B5B5B5", borderRadius:"7px", padding:"5px"}}>
+              <Button>
+                
               Skip this
-            </Typography>
-              <Typography component="button" sx={{marginRight:"10px", boxShadow: "0 6px 20px 2px #131F45", left:"30rem", position:"absolute",border:"none",top:"35rem", width:"6%",fontSize:"1.3rem", height:"5%", bgcolor:"#131F45", cursor:"pointer", color:"#FFFFFF", borderRadius:"7px", padding:"5px"}}>
-              Continue
-            </Typography>
+              </Button>
+              <Button>
+              Continue 
+
+              </Button>
+            
            
              
 
@@ -90,7 +110,7 @@ const Dashboard = () => {
 
 
           </Card>
-          <Card sx={{bgcolor:"#FFFFFF",  marginTop:"3rem", width:"50%", height:"40%", borderRadius:"15px", padding:"25px",}}>
+          <Card sx={{bgcolor:"#FFFFFF",  alignItems:"center",  marginTop:"3rem", width:"50%", height:"40%", borderRadius:"15px", padding:"25px",}}>
           <Typography variant="h6" component="p" sx={{color:"#131F45", }} fontWeight={100}>
           Today’s Event
           </Typography>
