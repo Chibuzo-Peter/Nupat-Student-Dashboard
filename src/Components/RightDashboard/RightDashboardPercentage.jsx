@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import LinearProgress from '@mui/material/LinearProgress';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { createTheme } from '@mui/material';
 
 export function LinearProgressWithLabel(props) {
   return (
@@ -27,7 +28,25 @@ LinearProgressWithLabel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
+export const Theme = createTheme({
+    palette: {
+      povicky: {
+        light: '#ffee33',
+        main: '#ffea00',
+        dark: '#b2a300',
+        contrastText: '#fff',
+      },
+      secondary: {
+        light: '#ff7961',
+        main: '#f44336',
+        dark: '#ba000d',
+        contrastText: '#000',
+      },
+    },
+  });
+
 export default function LinearProgresss(props) {
+  
   const [progress, setProgress] = React.useState(0);
 
   React.useEffect(() => {
