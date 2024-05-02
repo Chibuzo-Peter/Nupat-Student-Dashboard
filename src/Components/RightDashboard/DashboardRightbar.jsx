@@ -54,7 +54,7 @@ const DashboardRightbar = () => {
             <Typography variant='span' sx={{fontSize:"14px", color:"#B7B6B6", fontFamily:"inter, sans-serif", fontWeight:"600", lineHeight:"16px"}}>Figma</Typography> 
             </Container>
             <Container>
-                 <LinearProgresss  color="povicky" />
+                 <LinearProgresss  color="primary" />
             </Container>    
                         
 
