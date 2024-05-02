@@ -36,7 +36,7 @@ top:3rem;
           <Card display="flex" sx={{bgcolor:"#131F45", marginTop:"15px", marginBottom:"30px", width:"100%", height:"12%", borderRadius:"15px", padding:"25px"}}>
             
           </Card>
-         <Box  sx={{height:"25%", display:"flex",  width:"100%",   gap:"10px"  }}>
+         <Box  sx={{height:"25%", display:"flex", flexDirection:{xs:"column", sm:"column", md:"row"},  width:"100%",   gap:"10px"  }}>
          
          <Card sx={{height:"100%", width:"50%", border:"1px solid #000000",  borderRadius:"10px"}}></Card>
          <Card sx={{height:"100%", width:"50%", border:"1px solid #000000",  borderRadius:"10px"}}></Card>
