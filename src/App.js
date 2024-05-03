@@ -11,6 +11,7 @@ import Calendar from "./Pages/Calendar";
 import Dashboard from "./Pages/Dashboard";
 import Settings from "./Pages/Settings/Settings";
 import SignoutPage from "./Components/Authentication/SignoutPage";
+import EditProfile from "./Pages/EditProfile";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Route path="/signout" element={<SignoutPage />} />
       </Routes>
 
-
+      <EditProfile />
     </div>
   );
 }
