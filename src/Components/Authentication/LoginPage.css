@@ -88,6 +88,7 @@
   .left {
     height: 45vh;
     width: 100%;
+    font-size: 2.3rem;
     margin-inline: 0;
     background-position: center;
     border-top-left-radius: 0px;
