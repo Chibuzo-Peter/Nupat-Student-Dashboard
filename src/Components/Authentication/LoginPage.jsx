@@ -79,6 +79,7 @@ const LoginPage = () => {
                 id="outlined-basic"
                 label="Password"
                 variant="outlined"
+                type="password"
                 sx={{ width: "100%", paddingTop: "10px", marginTop: "20px" }}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -187,9 +188,11 @@ const LoginPage = () => {
                   id="outlined-basic"
                   label="Password"
                   placeholder="password"
+                  type="password"
                   variant="outlined"
                   sx={{ width: "100%", paddingTop: "10px", marginTop: "10px" }}
                   onChange={(e) => setPassword(e.target.value)}
+                  
                 />
 
                 <Button
@@ -298,6 +301,8 @@ const LoginPage = () => {
                   label="Password"
                   placeholder="password"
                   variant="outlined"
+                  type="password"
+
                   sx={{
                     width: "100%",
                     paddingTop: "10px",
