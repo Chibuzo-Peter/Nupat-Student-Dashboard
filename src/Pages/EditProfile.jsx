@@ -7,7 +7,7 @@ import ProfilePic from '../Images/Profile photo.png'
 
 const EditProfile = () => {
   return (
-    <Box>
+    <div className=''>
         <Navbar />
         <Stack direction="row" spacing={2} justifyContent="space-between" >
         <Sidebar style={{ display: { xs: "none", sm: "none", md: "none" } }} />
@@ -85,7 +85,7 @@ const EditProfile = () => {
             </Box>
 
         </Stack>
-    </Box>
+    </div>
   )
 }
 

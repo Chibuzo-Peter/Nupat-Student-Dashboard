@@ -60,6 +60,7 @@ const LoginPage = () => {
                 sx={{
                 textDecoration: "none",
                 "&:hover": { color: "#FFF", bgcolor: "aqua" }}}
+                onClick={handleLogin}
                 
               >
                 Login
@@ -123,6 +124,8 @@ const LoginPage = () => {
             </div>
           </div>
         </div>
+
+        
 
         {OpenLoginPage && (
           <div className="EmailError">
