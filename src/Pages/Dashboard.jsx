@@ -61,7 +61,7 @@ top:3rem;
           </Box>
           <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D8E0F8", border:"none", width:{xs: "25%", sm:"40%", md:"35%", lg:"35%"}, borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem",  color:"#B5B5B5",}}>Skip this</Typography>
           
-          <Typography variant="span" component="button" sx={{padding:"10px",boxShadow: "-2px 0px 15px #131F45", marginLeft:"6px", width:{xs: "25%", sm:"35%", md:"30%", lg:"30%"}, cursor:"pointer", background:"#131F45", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Continue</Typography>
+          <Typography variant="span" component="button" sx={{padding:"10px",boxShadow: "-2px 0px 15px #131F45", marginLeft:{xs:"6px",sm:"6px",md:"6px", lg:"8px"}, width:{xs: "25%", sm:"35%", md:"30%", lg:"30%"}, cursor:"pointer", background:"#131F45", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Continue</Typography>
           </Box>
 
 
