@@ -1,7 +1,7 @@
 import { Box, ButtonBase, Card, CardContent, Stack, TextField, Typography } from '@mui/material'
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import Sidebar from '../Components/Sidebar'
+import Sidebar from '../Components/Sidebar/Sidebar'
 import { Edit } from '@mui/icons-material'
 import ProfilePic from '../Images/Profile photo.png'
 import '../Components/IndustryAndInterest'

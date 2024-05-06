@@ -1,7 +1,7 @@
 import React from 'react'
 import Rightbar from '../Components/Rightbar'
 import Feeds from '../Components/Feeds'
-import Sidebar from '../Components/Sidebar'
+import Sidebar from '../Components/Sidebar/Sidebar'
 import { Box, Container, Stack } from '@mui/material'
 import Navbar from '../Components/Navbar'
 
