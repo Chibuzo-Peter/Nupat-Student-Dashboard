@@ -2,12 +2,12 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar/Sidebar";
 import { Box, Card, Container, Stack, Typography } from "@mui/material";
-import DashboardRightbar from "../Components/DashboardComponents/DashboardRightbar";
+import DashboardRightbar from "../Components/DashboardProductData.js/DashboardRightbar";
 import styled from "styled-components";
-import DashboardHero from "../Components/DashboardComponents/DashboardHero";
-import SwipeableTextMobileStepper from "../Components/DashboardComponents/DashboardHero";
-import {CircularWithValueLabel} from "../Components/DashboardComponents/DashboardCircularValueLabel"
-import DashboardProductInfo from "../Components/DashboardComponents/DashboardProductInfo";
+import DashboardHero from "../Components/DashboardProductData.js/DashboardHero";
+import SwipeableTextMobileStepper from "../Components/DashboardProductData.js/DashboardHero";
+import {CircularWithValueLabel} from "../Components/DashboardProductData.js/DashboardCircularValueLabel"
+import DashboardProductInfo from "../Components/DashboardProductData.js/DashboardProductInfo";
 
 
 
@@ -59,9 +59,9 @@ top:3rem;
           <Box sx={{display:"flex",direction:"row", height:"4.5rem", width:"64%",  justifyContent:"space-between", marginLeft:"5.2rem", marginTop:"-0.1rem"}}>
           <DashboardProductInfo  />
           </Box>
-          <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D8E0F8", border:"none", width:{xs: "25%", sm:"40%", md:"35%", lg:"40%"}, borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem",  color:"#B5B5B5",}}>Skip this</Typography>
+          <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D8E0F8", border:"none", width:{xs: "30%", sm:"40%", md:"35%", lg:"42%"}, borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem",  color:"#B5B5B5",}}>Skip this</Typography>
           
-          <Typography variant="span" component="button" sx={{padding:"10px",boxShadow: "-2px 0px 15px #131F45", marginLeft:"6px", width:{xs: "25%", sm:"35%", md:"30%", lg:"35%"}, cursor:"pointer", background:"#131F45", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Continue</Typography>
+          <Typography variant="span" component="button" sx={{padding:"10px",boxShadow: "-2px 0px 15px #131F45", marginLeft:"6px", width:{xs: "30%", sm:"35%", md:"30%", lg:"35%"}, cursor:"pointer", background:"#131F45", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Continue</Typography>
           </Box>
 
 
@@ -79,9 +79,9 @@ top:3rem;
           <Box sx={{display:"flex",direction:"row", height:"4.5rem", width:"64%",  justifyContent:"space-between", marginLeft:"5.2rem", marginTop:"-0.1rem"}}>
           <DashboardProductInfo />
           </Box>
-          <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D7EAF8", border:"none", width:{xs: "25%", sm:"25%", md:"25%", lg:"35%"}, borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#B5B5B5",}}>Details</Typography>
+          <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D7EAF8", border:"none", width:{xs: "30%", sm:"25%", md:"25%", lg:"35%"}, borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#B5B5B5",}}>Details</Typography>
           
-          <Typography variant="span" component="button" sx={{padding:{xs:"10px"},boxShadow: "-2px 0px 15px #599FD5", marginLeft:"6px", width:{xs: "25%", sm:"40%", md:"35%", lg:"45%"}, cursor:"pointer", background:"#599FD5", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Join event</Typography>
+          <Typography variant="span" component="button" sx={{padding:{xs:"10px"},boxShadow: "-2px 0px 15px #599FD5", marginLeft:"6px", width:{xs: "35%", sm:"40%", md:"35%", lg:"45%"}, cursor:"pointer", background:"#599FD5", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Join event</Typography>
           </Box>
 
 
