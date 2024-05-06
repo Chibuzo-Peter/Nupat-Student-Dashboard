@@ -59,15 +59,15 @@ top:3rem;
           <Box sx={{display:"flex",direction:"row", height:"4.5rem", width:"64%",  justifyContent:"space-between", marginLeft:"5.2rem", marginTop:"-0.1rem"}}>
           <DashboardProductInfo />
           </Box>
-          <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D8E0F8", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#B5B5B5",}}>Skip this</Typography>
+          <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D8E0F8", border:"none", width:{xs: "25%", sm:"25%", md:"25%", lg:"25%"}, borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem",  color:"#B5B5B5",}}>Skip this</Typography>
           
-          <Typography variant="span" component="button" sx={{padding:"10px",boxShadow: "-2px 0px 15px #131F45", marginLeft:"6px", width:{xs: "35%", sm:"30%"}, cursor:"pointer", background:"#131F45", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Continue</Typography>
+          <Typography variant="span" component="button" sx={{padding:"10px",boxShadow: "-2px 0px 15px #131F45", marginLeft:"6px", width:{xs: "25%", sm:"30%", md:"30%", lg:"25%"}, cursor:"pointer", background:"#131F45", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Continue</Typography>
           </Box>
 
 
          </Card>
 
-         <Card sx={{height:{xs:"60vh", sm:"35%", md:"100%" }, padding:"20px", width:{xs:"70vw", sm:'90%', md:"50%"},  alignItems:"center", border:"1px solid #000000",  borderRadius:"10px"}}>
+         <Card sx={{height:{xs:"60vh", sm:"35%", md:"100%",  }, padding:"20px", width:{xs:"70vw", sm:'90%', md:"50%"},  alignItems:"center", border:"1px solid #000000",  borderRadius:"10px"}}>
          <Box mb="25px" >
           <Typography variant="p" component="h3" sx={{fontSize:"1rem"}}>Today’s Event</Typography>
           <span style={{fontSize:"0.7rem", color:"#B5B5B5",}}>0 lessons, 0 hours 0 minutes</span>
@@ -79,9 +79,9 @@ top:3rem;
           <Box sx={{display:"flex",direction:"row", height:"4.5rem", width:"64%",  justifyContent:"space-between", marginLeft:"5.2rem", marginTop:"-0.1rem"}}>
           <DashboardProductInfo />
           </Box>
-          <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D7EAF8", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#B5B5B5",}}>Details</Typography>
+          <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D7EAF8", border:"none", width:{xs: "25%", sm:"25%", md:"25%", lg:"20%"}, borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#B5B5B5",}}>Details</Typography>
           
-          <Typography variant="span" component="button" sx={{padding:{xs:"10px"},boxShadow: "-2px 0px 15px #599FD5", marginLeft:"6px", width:{xs: "35%", sm:"30%"}, cursor:"pointer", background:"#599FD5", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Join event</Typography>
+          <Typography variant="span" component="button" sx={{padding:{xs:"10px"},boxShadow: "-2px 0px 15px #599FD5", marginLeft:"6px", width:{xs: "25%", sm:"30%", md:"30%", lg:"25%"}, cursor:"pointer", background:"#599FD5", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Join event</Typography>
           </Box>
 
 
