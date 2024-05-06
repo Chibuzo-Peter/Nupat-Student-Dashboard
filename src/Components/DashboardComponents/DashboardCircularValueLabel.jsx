@@ -4,10 +4,10 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-function CircularProgressWithLabel(props) {
+function CircularProgressWithLabel(props,{size}) {
   return (
     <Box sx={{ position: 'relative', border:"none",   marginTop:"-0.8rem", display: 'inline-flex' }}>
-      <CircularProgress sx={{ width: '100%',  }} variant="determinate" border="none"  size="5rem" {...props} />
+      <CircularProgress size="5rem" variant="determinate" border="none"   {...props} />
       <Box
         sx={{
           top: 0,
