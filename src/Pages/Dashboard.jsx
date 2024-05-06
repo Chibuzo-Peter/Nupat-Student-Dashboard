@@ -50,7 +50,7 @@ top:3rem;
          <Card sx={{height:{xs:"60vh", sm:"35%", md:"100%" }, padding:"20px", width:{xs:"70vw", sm:'90%', md:"50%"},  alignItems:"center", border:"1px solid #000000",  borderRadius:"10px"}}>
          <Box mb="25px" >
           <Typography variant="p" component="h3" sx={{fontSize:"1rem"}}>Today’s Course</Typography>
-          <span style={{fontSize:"0.7rem", color:"#B5B5B5",}}>0 lessons, 0 hours 0 minuties</span>
+          <span style={{fontSize:"0.7rem", color:"#B5B5B5",}}>0 lessons, 0 hours 0 minutes</span>
           </Box>
           <Box sx={{ justifyContent:"space-between", marginTop:"20px"}}>
 
@@ -70,7 +70,7 @@ top:3rem;
          <Card sx={{height:{xs:"60vh", sm:"35%", md:"100%" }, padding:"20px", width:{xs:"70vw", sm:'90%', md:"50%"},  alignItems:"center", border:"1px solid #000000",  borderRadius:"10px"}}>
          <Box mb="25px" >
           <Typography variant="p" component="h3" sx={{fontSize:"1rem"}}>Today’s Event</Typography>
-          <span style={{fontSize:"0.7rem", color:"#B5B5B5",}}>0 lessons, 0 hours 0 minuties</span>
+          <span style={{fontSize:"0.7rem", color:"#B5B5B5",}}>0 lessons, 0 hours 0 minutes</span>
           </Box>
           <Box sx={{ justifyContent:"space-between", marginTop:"20px"}}>
 
@@ -97,6 +97,6 @@ top:3rem;
       </Stack>
     </Box>
   );
-};
+}; 
 
 export default Dashboard;
