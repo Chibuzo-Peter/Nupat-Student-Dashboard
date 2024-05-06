@@ -47,7 +47,7 @@ top:3rem;
         
          <Box  sx={{height:{xs:"60%", sm:"70%", md:"23%"},  justifyContent:"center", display:"flex", alignItems:"center", flexDirection:{xs:"column", sm:"column", md:"row",},  width:{xs:"100vw", sm:"100%", md:"100%", lg:"100%"},   gap:{xs:"50px", sm:"20px", md:"10px" } }}>
          
-         <Card sx={{height:{xs:"60vh", sm:"35%", md:"100%" }, padding:"20px", width:{xs:"70vw", sm:'90%', md:"50%", lg:"40%"},  alignItems:"center", border:"1px solid #000000",  borderRadius:"10px"}}>
+         <Card sx={{height:{xs:"80vh", sm:"35%", md:"100%" }, padding:"20px", width:{xs:"70vw", sm:'90%', md:"50%", lg:"40%"},  alignItems:"center", border:"1px solid #000000",  borderRadius:"10px"}}>
          <Box mb="25px" >
           <Typography variant="p" component="h3" sx={{fontSize:"1rem"}}>Today’s Course</Typography>
           <span style={{fontSize:"0.7rem", color:"#B5B5B5",}}>0 lessons, 0 hours 0 minutes</span>
@@ -67,7 +67,7 @@ top:3rem;
 
          </Card>
 
-         <Card sx={{height:{xs:"60vh", sm:"35%", md:"100%",  }, padding:"20px", width:{xs:"70vw", sm:'90%', md:"50%", lg:"40%"},  alignItems:"center", border:"1px solid #000000",  borderRadius:"10px"}}>
+         <Card sx={{height:{xs:"80vh", sm:"35%", md:"100%",  }, padding:"20px", width:{xs:"70vw", sm:'90%', md:"50%", lg:"40%"},  alignItems:"center", border:"1px solid #000000",  borderRadius:"10px"}}>
          <Box mb="25px" >
           <Typography variant="p" component="h3" sx={{fontSize:"1rem"}}>Today’s Event</Typography>
           <span style={{fontSize:"0.7rem", color:"#B5B5B5",}}>0 lessons, 0 hours 0 minutes</span>
