@@ -1,13 +1,18 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
-import Sidebar from "../Components/Sidebar";
+import Sidebar from "../Components/Sidebar/Sidebar";
 import { Box, Card, Container, Stack, Typography } from "@mui/material";
-import DashboardRightbar from "../Components/RightDashboard/DashboardRightbar";
-import Round from "../Images/round.png"
-import Round2 from "../Images/round2.png"
-import Arrow from "../Images/arrowdot.png"
-
+import DashboardRightbar from "../Components/DashboardComponents/DashboardRightbar";
 import styled from "styled-components";
+import DashboardHero from "../Components/DashboardComponents/DashboardHero";
+import SwipeableTextMobileStepper from "../Components/DashboardComponents/DashboardHero";
+import {CircularWithValueLabel} from "../Components/DashboardComponents/DashboardCircularValueLabel"
+import DashboardProductInfo from "../Components/DashboardComponents/DashboardProductInfo";
+
+
+
+
+
 const Dashboard = () => {
 
 const Button = styled.button`
@@ -28,21 +33,62 @@ top:3rem;
 
 
   return (
-    <Box>
+    <Box sx={{ margin: "0"}}>
       <Navbar />
-      <Stack direction="row" spacing={2} justifyContent="space-between">
+      <Stack direction="row" spacing={1} justifyContent="space-between">
         <Sidebar />
-        <Box sx={{height:"100hv"}} flex={{ xs: 2, sm: 3, md: 4, lg: 5, xl: 6 }} >
-          <Card display="flex" sx={{bgcolor:"#131F45", marginTop:"15px", marginBottom:"30px", width:"100%", height:"12%", borderRadius:"15px", padding:"25px"}}>
+        <Box  sx={{height:"100hv", justifyContent:"center", flexWrap:"wrap", margin:"25px", width:"100%", alignItems:"center", }} flex={{ xs: 1, sm: 3, md: 4, lg: 5, xl: 6 }} >
+        
+        {/* <SwipeableTextMobileStepper /> */}
+        <Box display="flex" sx={{bgcolor:"#131F45", alignItems:"center",  marginTop:"15px", marginBottom:"30px", width:{xs:"93%", sm:"100%",  md:"100%"}, height:{xs:"12%", sm:"15%", md:"12%"}, borderRadius:"15px", }}>
             
-          </Card>
-         <Box  sx={{height:"25%", display:"flex", flexDirection:{xs:"column", sm:"column", md:"row"},  width:"100%",   gap:"10px"  }}>
+        </Box>
+         {/* <DashboardHero /> */}
+        
+         <Box  sx={{height:{xs:"60%", sm:"70%", md:"23%"},  justifyContent:"center", display:"flex", alignItems:"center", flexDirection:{xs:"column", sm:"column", md:"row"},  width:{xs:"100vw", sm:"100%", md:"100%"},   gap:{xs:"50px", sm:"20px", md:"10px" } }}>
          
-         <Card sx={{height:"100%", width:"50%", border:"1px solid #000000",  borderRadius:"10px"}}></Card>
-         <Card sx={{height:"100%", width:"50%", border:"1px solid #000000",  borderRadius:"10px"}}></Card>
-         
+         <Card sx={{height:{xs:"60vh", sm:"35%", md:"100%" }, padding:"20px", width:{xs:"70vw", sm:'90%', md:"50%"},  alignItems:"center", border:"1px solid #000000",  borderRadius:"10px"}}>
+         <Box mb="25px" >
+          <Typography variant="p" component="h3" sx={{fontSize:"1rem"}}>Today’s Course</Typography>
+          <span style={{fontSize:"0.7rem", color:"#B5B5B5",}}>0 lessons, 0 hours 0 minuties</span>
+          </Box>
+          <Box sx={{ justifyContent:"space-between", marginTop:"20px"}}>
+
+          <CircularWithValueLabel />
+          <Typography variant="p" component="h4" sx={{alignItems:"center", marginBottom:"0.5rem", marginLeft:"5rem", marginTop:"-5.2rem", width:"9rem", display:"flex", height:"1.5rem",fontSize:"0.9rem", paddingRight:"20px",  textAlign:"center", justifyContent:"center"}}>Product Design</Typography>
+          <Box sx={{display:"flex",direction:"row", height:"4.5rem", width:"64%",  justifyContent:"space-between", marginLeft:"5.2rem", marginTop:"-0.1rem"}}>
+          <DashboardProductInfo />
+          </Box>
+          <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D8E0F8", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#B5B5B5",}}>Skip this</Typography>
+          
+          <Typography variant="span" component="button" sx={{padding:"10px",boxShadow: "-2px 0px 15px #131F45", marginLeft:"6px", width:{xs: "35%", sm:"30%"}, cursor:"pointer", background:"#131F45", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Continue</Typography>
+          </Box>
+
+
+         </Card>
+
+         <Card sx={{height:{xs:"60vh", sm:"35%", md:"100%" }, padding:"20px", width:{xs:"70vw", sm:'90%', md:"50%"},  alignItems:"center", border:"1px solid #000000",  borderRadius:"10px"}}>
+         <Box mb="25px" >
+          <Typography variant="p" component="h3" sx={{fontSize:"1rem"}}>Today’s Event</Typography>
+          <span style={{fontSize:"0.7rem", color:"#B5B5B5",}}>0 lessons, 0 hours 0 minuties</span>
+          </Box>
+          <Box sx={{ justifyContent:"space-between", marginTop:"20px"}}>
+
+          <CircularWithValueLabel />
+          <Typography variant="p" component="h4" sx={{alignItems:"center", marginBottom:"0.5rem", marginLeft:"5rem", marginTop:"-5.2rem", width:"9rem", display:"flex", height:"1.5rem",fontSize:"0.9rem", paddingRight:"20px",  textAlign:"center", justifyContent:"center"}}>Product Design</Typography>
+          <Box sx={{display:"flex",direction:"row", height:"4.5rem", width:"64%",  justifyContent:"space-between", marginLeft:"5.2rem", marginTop:"-0.1rem"}}>
+          <DashboardProductInfo />
+          </Box>
+          <Typography variant="span" component="button" sx={{padding:"10px", cursor:"pointer", background:"#D7EAF8", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#B5B5B5",}}>Details</Typography>
+          
+          <Typography variant="span" component="button" sx={{padding:{xs:"10px"},boxShadow: "-2px 0px 15px #599FD5", marginLeft:"6px", width:{xs: "35%", sm:"30%"}, cursor:"pointer", background:"#599FD5", border:"none", borderRadius:"8px", fontWeight:"700", fontSize:"0.7rem", color:"#FFFFFF",}}>Join event</Typography>
+          </Box>
+
+
+         </Card>
+
          </Box>
-          <Box  sx={{height:"54%", marginTop:"25px", display:"flex", borderRadius:"10px", width:"100%", border:"1px solid black",  gap:"10px"  }}>
+          <Box  sx={{height:{xs:"50%", sm:"50%", md:"54%"}, alignItems:"center", marginTop:"25px", display:"flex", borderRadius:"10px", width:{xs:"93vw", sm:'100%', md:"100%"}, border:"1px solid black",  gap:"10px"  }}>
           
           </Box>
          

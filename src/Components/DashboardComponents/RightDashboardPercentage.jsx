@@ -57,11 +57,11 @@ export default function LinearProgresss(props) {
       clearInterval(timer);
     };
   }, []);
-  const { color} = props;
+  const { color, } = props;
 
   return (
     <Box sx={{ width: '100%', }}>
-      <LinearProgressWithLabel color={color} sx={{ borderRadius:"50px",  height:"7px"}} value={progress} />
+      <LinearProgressWithLabel color={color} sx={{ borderRadius:"50px", marginLeft:"10%", height:"7px"}} value={progress} />
     </Box>
   );
 }

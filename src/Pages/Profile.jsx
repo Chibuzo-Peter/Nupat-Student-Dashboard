@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "../Components/Sidebar";
+import Sidebar from '../Components/Sidebar/Sidebar'
 import { Box, Card, CardContent, Stack, Typography } from "@mui/material";
 import Navbar from "../Components/Navbar";
 import Banner from "../Images/profile banner.png";
