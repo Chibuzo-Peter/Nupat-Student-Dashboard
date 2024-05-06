@@ -1,15 +1,16 @@
-import { Box, Card, CardContent, Stack } from '@mui/material'
+import { Box, Card, CardContent, Stack, TextField, Typography } from '@mui/material'
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Sidebar'
 import { Edit } from '@mui/icons-material'
 import ProfilePic from '../Images/Profile photo.png'
+import Button from '../Components/Button'
 
 const EditProfile = () => {
   return (
     <div className=''>
         <Navbar />
-        <Stack direction="row" spacing={2} justifyContent="space-between" >
+        <Stack direction="row" spacing={2} justifyContent="space-between" sx={{backgroundColor:"#eee"}}>
         <Sidebar style={{ display: { xs: "none", sm: "none", md: "none" } }} />
             <Box>
             <Card
@@ -71,15 +72,16 @@ const EditProfile = () => {
                 <h4>
                   Your photo
                 </h4>
-                
                 <small>
-                This will be displayed 
-                  
+                This will be displayed on your profile
                 </small>
-                <div><button>Upload new</button><button>Save</button></div>
+                {/* <div><Button>Upload new</Button><Button>Save</Button></div> */}
               </div>
             </CardContent>
           </Card>
+          <form className='h-10 w-6 bg-white'>
+
+          </form>
 
 
             </Box>

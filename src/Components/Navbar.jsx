@@ -55,19 +55,21 @@ const Navbar = () => {
   return (
     <AppBar position="sticky">
       <StyledToolbar>
+        <Typography variant="span">Welcome back, James Obogu</Typography>
+
         <Search>
           <SearchIcon sx={{ color: "black" }} />
           <InputBase placeholder="Search..." sx={{ color: "black" }} />
         </Search>
         <Icons>
-          <Avatar src={ProfilePic} onClick={(e)  => setOpen(true)} />
+          <Avatar src={ProfilePic} onClick={(e) => setOpen(true)} />
           <Badge badgeContent={""} color="error">
             <Notifications sx={{ color: "#b3b3b3" }} />
           </Badge>
         </Icons>
         <UserBox onClick={(e) => setOpen(true)}>
           <Avatar src={ProfilePic} />
-          <Typography variant="span">Welcome back, Jamon</Typography>
+          <Typography variant="span">Welcome back, James Obogu</Typography>
         </UserBox>
       </StyledToolbar>
       <Menu

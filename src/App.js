@@ -29,7 +29,7 @@ function App() {
         <Route path="/signout" element={<SignoutPage />} />
       </Routes>
 
-      {/* <EditProfile /> */}
+      <EditProfile />
     </div>
   );
 }
