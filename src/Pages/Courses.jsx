@@ -7,17 +7,17 @@ import Navbar from '../Components/Navbar'
 
 const Courses = () => {
   return (
-    <Box>
+    <>
     <Navbar />
-    <Stack direction="row" spacing={2} justifyContent="space-between" >
-
+    <div style={{display:"flex", flexDirection:"row", alignItems:"space-between", paddingTop:"1%", backgroundColor:"#eee"}}>
         <Sidebar />
-        <Feeds word="Courses" />
-        <Rightbar />
+        <div style={{width:"50%", paddingInline:"20px"}} >Courses are displayed here</div>
+
+        <div style={{width:"25%", marginInline:"20px"}} >This is the right bar</div>
 
 
-    </Stack>
-</Box>
+    </div>
+</>
   )
 }
 
