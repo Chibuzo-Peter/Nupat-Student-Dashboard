@@ -1,5 +1,5 @@
 {
-  "name":"nupat-student-dashboard",
+  "name": "nupat-student-dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,38 +7,35 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fontsource/roboto": "^5.0.13",
+    "@fullcalendar/daygrid": "^6.1.11",
+    "@fullcalendar/react": "^6.1.11",
+    "@fullcalendar/timegrid": "^6.1.11",
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.16",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@mui/x-date-pickers": "^7.2.0",
-    "@natscale/react-calendar": "^0.0.0-beta.26",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.19",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
+    "calender": "^1.0.3",
     "dayjs": "^1.11.10",
-
-    "postcss": "^8.4.38",
-
     "framer-motion": "^11.1.7",
-
+    "google-calendar-react": "^1.0.0",
+    "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-calendar": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
-
-   
-    "tailwindcss": "^3.4.3",
-
     "react-swipeable": "^7.0.1",
     "react-swipeable-views-utils": "^0.14.0",
     "styled-components": "^6.1.9",
+    "tailwindcss": "^3.4.3",
     "to-property-key-x": "^3.1.2",
-
     "web-vitals": "^2.1.4"
   },
   "scripts": {
